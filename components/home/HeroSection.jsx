@@ -67,7 +67,7 @@ const HeroSection = ({
           transition={{ duration: 0.8 }}
           className="text-[#f3e9cb] text-[6vh] md:text-4xl font-bold drop-shadow-lg"
         >
-          <span className="text md:text-6xl  font-tangerine">{welcomeHeading.charAt(0)}</span>
+          <span className="text-6xl font-[900]  font-tangerine">{welcomeHeading.charAt(0)}</span>
           {welcomeHeading.slice(1)}
         </motion.h1>
 
@@ -80,7 +80,7 @@ const HeroSection = ({
             className="text-4xl text-[#f3e9cb] font-playfair text-center tracking-widest"
           /> */}
         <h1 className="text-2xl md:text-3xl text-[#f3e9cb] font-playfair text-center tracking-widest">
-          <span className="text md:text-5xl  font-playfair font-tangerine">T</span>he <span className="text md:text-5xl  font-playfair font-tangerine">P</span>alm <span className="text md:text-5xl  font-playfair font-tangerine">B</span>liss  <span className="text md:text-5xl  font-playfair font-tangerine">R</span>esort
+          <span className="text-4xl md:text-5xl  font-playfair font-tangerine">T</span>he <span className="text-4xl md:text-5xl  font-playfair font-tangerine">P</span>alm <span className="text-4xl md:text-5xl  font-playfair font-tangerine">B</span>liss  <span className="text-4xl md:text-5xl  font-playfair font-tangerine">R</span>esort
         </h1>
         <h1 className="text-gray-200 text-4xl  font-tangerine mt-1">
           Adventure in jungle
@@ -88,7 +88,7 @@ const HeroSection = ({
 
        
         <p className="font-playfair text-start text-[#f3e9cb] text-2xl md:text-3xl ">
-          <span className="text md:text-5xl  font-tangerine">A</span>tharva <span className="text md:text-5xl  font-tangerine">A</span>yurvedic <span className="text md:text-5xl  font-tangerine">W</span>ellness <br /> <span className="text md:text-5xl  font-tangerine">R</span>etreat
+          <span className="text-4xl md:text-5xl  font-tangerine">A</span>tharva <span className="text-4xl md:text-5xl  font-tangerine">A</span>yurvedic <span className="text-4xl md:text-5xl  font-tangerine">W</span>ellness <br className="hidden md:flex" /> <span className="text-4xl md:text-5xl  font-tangerine">R</span>etreat
         </p>
         <button
         onClick={() => router.push('/resort')}
