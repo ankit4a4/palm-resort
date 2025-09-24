@@ -28,10 +28,11 @@ import family2 from "@/public/Images/familyRoom/5.webp";
 import family3 from "@/public/Images/familyRoom/4.webp";
 import family4 from "@/public/Images/familyRoom/2.webp";
 import family5 from "@/public/Images/familyRoom/1.webp";
+import { useRouter } from "next/navigation";
 
 const ALL_ROOMS = [
   {
-    id: 2,
+    id: 0,
     title: "Mud Houses",
     description:
       "Experience rustic charm in our traditional mud house, featuring a separate living area and ample space.",
@@ -50,7 +51,7 @@ const ALL_ROOMS = [
     },
   },
   {
-    id: 4,
+    id: 1,
     title: "Swiss Cottages",
     description:
       "Relax in our luxurious Swiss cottages, where you'll find a comfortable bed, exclusive experiences and all modern amenities.",
@@ -68,7 +69,7 @@ const ALL_ROOMS = [
     },
   },
   {
-    id: 6,
+    id: 2,
     title: "Family Suite",
     description:
       "Perfect for families with connecting rooms and child-friendly amenities.",
@@ -99,7 +100,7 @@ const ALL_ROOMS = [
     },
   },
   {
-    id: 8,
+    id: 3,
     title: "Luxury Room",
     description:
       "Finest comfort with breathtaking mountain views, modern interiors and exquisite service.",
@@ -139,6 +140,8 @@ function RoomImageSlider({ images }) {
   const nextImage = () => {
     setCurrent((c) => (c === images.length - 1 ? 0 : c + 1));
   };
+
+  const route = useRouter()
 
   return (
     <div className="relative w-full h-[32rem] bg-gray-100 rounded-xl overflow-hidden">
@@ -379,9 +382,15 @@ function RoomDetailedModal({ room, open, onClose }) {
 export default function RoomsSection() {
   const [openIdx, setOpenIdx] = useState(null);
   const [detailedOpenIdx, setDetailedOpenIdx] = useState(null);
+  const router = useRouter()
+
+  const setLocalId = (id) => {
+      localStorage.setItem("id" , id)
+      router.push("/booknow")
+  }
 
   return (
-    <section className="bg-[#FBF7F0] py-[3vh] md:py-[12vh] px-3 md:px-[4vw]">
+    <section className="bg-[#FBF7F0] py-[3vh] md:py-[12vh] px-3 md:px-[4vw]" id="rooms">
       <div className="text-center space-y-[5vh] mx-auto mb-12">
         <h2 className="text-[6vw] md:text-[2.8vw] font-alegreya  italic capitalize text-yellow-700/90  font-semibold  leading-tight">
           Stay In <span>Harmony & Comfort</span>
@@ -402,10 +411,7 @@ export default function RoomsSection() {
             key={room.id}
             className="cursor-pointer transition-all duration-200"
             // onClick={() => setOpenIdx(idx)}
-            onClick={(e) => {
-              e.stopPropagation();
-              setDetailedOpenIdx(idx);
-            }}
+            
           >
             <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <RoomImageSlider images={room.images} />
@@ -448,10 +454,7 @@ export default function RoomsSection() {
 
                 <div className="flex gap-2">
                   <Button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      // router.push(`/contact?id=${room.id}`);
-                    }}
+                   onClick={() => setLocalId(room.id)}
                     className="flex-1 bg-yellow-700/90 hover:bg-[#8c672d] text-[#f3e9cb] font-semibold"
                   >
                     Book Now

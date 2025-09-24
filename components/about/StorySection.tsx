@@ -5,13 +5,15 @@ import Image from "next/image";
 import { Crown, ChevronRight, Quote, Calendar, MapPin } from "lucide-react";
 
 const StorySection = () => (
-  <section className="relative py-32 bg-[#FBF6E9] overflow-hidden">
+  <section className="relative py-8 md:py-20 bg-[#FBF6E9] overflow-hidden">
     {/* === Subtle Texture Background === */}
     <div className="absolute inset-0 overflow-hidden z-0 opacity-20">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')]" />
     </div>
 
     <div className="container mx-auto px-5 md:px-10 lg:px-16 relative z-10">
+
+
       {/* === Section Header === */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -19,6 +21,7 @@ const StorySection = () => (
         transition={{ duration: 0.8 }}
         className="text-center mb-20"
       >
+        <p className="text-3xl pb-10 text-[#a17633] text-center font-playfair italic">आयुष्यम् अनुभवः समर्पितः <br /> <span className="mt-6 "> Dedicated to the experience of WELLNESS  </span></p>
         <div className="inline-flex items-center gap-3 mb-4 px-6 py-2 bg-[#fbf7f0]/80 backdrop-blur-sm rounded-full border border-[#E8D5B5]">
           <Crown className="w-5 h-5 text-[#C0A46B]" />
           <span className="text-sm font-medium text-[#8A6D3B] tracking-wider italic">LEGACY OF ELEGANCE</span>

@@ -35,11 +35,10 @@ const HeroSection = ({
   // Removed TypeScript type for event parameter
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
   };
 
   const handleAnimationComplete = () => {
-    console.log("Animation completed!");
+    console.log();
   };
 
   return (
@@ -55,10 +54,8 @@ const HeroSection = ({
         <source src="/Images/Home/herosection.mp4" type="video/mp4" />
       </video>
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-      {/* Heading & Subtitle */}
       <div className="absolute md:pl-24 inset-0 z-10 flex flex-col items-start justify-center text-center px-4">
 
         <motion.h1
@@ -71,14 +68,7 @@ const HeroSection = ({
           {welcomeHeading.slice(1)}
         </motion.h1>
 
-        {/* <BlurText
-            text="The Palm Bliss Resort"
-            delay={150}
-            animateBy="words"
-            direction="top"
-            onAnimationComplete={handleAnimationComplete}
-            className="text-4xl text-[#f3e9cb] font-playfair text-center tracking-widest"
-          /> */}
+        
         <h1 className="text-2xl md:text-3xl text-[#f3e9cb] font-playfair text-center tracking-widest">
           <span className="text-4xl md:text-5xl  font-playfair font-tangerine">T</span>he <span className="text-4xl md:text-5xl  font-playfair font-tangerine">P</span>alm <span className="text-4xl md:text-5xl  font-playfair font-tangerine">B</span>liss  <span className="text-4xl md:text-5xl  font-playfair font-tangerine">R</span>esort
         </h1>
@@ -122,7 +112,6 @@ const HeroSection = ({
           onSubmit={handleSubmit}
           className="grid grid-cols-2 md:grid-cols-8 gap-px overflow-hidden bg-[#fbf7f0]/5 backdrop-blur-md border border-white/10 rounded-[2vh] md:rounded-[1vw] shadow-[0_4px_30px_rgba(0,0,0,0.4)] text-[#f3e9cb] font-medium text-[1.6vh] md:text-[1vw]"
         >
-          {/* Name & Phone */}
           {[
             {
               label: "Name",

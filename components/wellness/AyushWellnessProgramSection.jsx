@@ -20,6 +20,7 @@ export default function AyushWellnessProgramSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
+            <p className="text-3xl pb-10 text-[#a17633] text-center font-playfair italic">आरोग्यवर्धकं हरितभोजनम् <br /> <span className="mt-6 ">Green food in Enhances Wellness</span></p>
           <h1 className="text-yellow-700/90 font-alegreya  italic text-4xl lg:text-6xl font-bold leading-tight mb-4">
             Ayush Wellness Program
           </h1>

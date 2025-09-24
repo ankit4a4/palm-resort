@@ -22,6 +22,7 @@ export default function AyushDiningSection() {
           >
             {/* Main Heading */}
             <div className="space-y-6 flex justify-center items-center flex-col">
+              <p className="text-3xl pb-10 text-[#a17633] text-center font-playfair italic">प्राकृतिक सौन्दर्ये तिष्ठति सुखनिवास <br /> <span className="mt-6 "> A Blissful Abode in Nature's Beauty</span></p>
               <h1 className="text-yellow-700/90 text-5xl font-alegreya  italic lg:text-7xl font-bold leading-[0.9] tracking-tight">
                 Ayush Bhoj (Dinning)
               </h1>

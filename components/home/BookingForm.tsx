@@ -29,7 +29,6 @@ const BookingForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Booking form submitted:', formData);
     // Handle form submission here
   };
 

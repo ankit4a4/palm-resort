@@ -513,7 +513,7 @@ const FacilitiesGrid = () => {
           >
             <div className="relative z-20 text-black md:p-1">
               <Link
-                href="/contact"
+                href="/rooms/#rooms"
                 className="text-xl flex items-center gap-2 md:text-2xl font-sans font-bold mb-2 border rounded-sm my-2 px-4 border-yellow-700 py-2 hover:bg-yellow-700 hover:text-[#f3e9cb] transition-all duration-300"
               >
                 Book Now
