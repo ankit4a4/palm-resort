@@ -96,12 +96,12 @@ export default function WellnessPackagesSection() {
                                 <div className="relative h-64 w-full overflow-hidden">
                                     <div className="absolute inset-0 bg-[#8B5A2B] mix-blend-multiply opacity-0 group-hover:opacity-20 transition-opacity duration-500 z-10" />
                                     <Image
+                                        loading="lazy"
                                         src={image}
                                         alt={title}
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        priority={index < 3}
                                     />
                                     {highlight && (
                                         <div

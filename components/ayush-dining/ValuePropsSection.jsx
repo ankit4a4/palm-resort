@@ -80,7 +80,8 @@ export default function ValuePropsSection() {
             >
               <div className="relative w-full md:w-2/5 h-full min-h-60">
                 <Image
-                  src={img}
+loading="lazy" 
+  src={img}
                   alt={title}
                   fill
                   className="object-cover border-r-2 border-black transition-transform duration-500 ease-out group-hover:scale-105"

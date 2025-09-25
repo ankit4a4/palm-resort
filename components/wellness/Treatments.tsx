@@ -73,7 +73,8 @@ const Treatments = () => {
                                 <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-2xl transition-all duration-300 overflow-hidden">
                                     <div className="relative h-64">
                                         <Image
-                                            src={treatment.image}
+loading="lazy" 
+                            src={treatment.image}
                                             fill
                                             alt={treatment.title}
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"

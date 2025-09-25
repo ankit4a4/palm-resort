@@ -104,7 +104,8 @@ const MehndiSection = () => {
                         {/* Right Side Big Image */}
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl" data-aos="fade-left">
                             <Image
-                                src={img6.src}
+loading="lazy" 
+                src={img6.src}
                                 alt="Mehndi celebration"
                                 width={100}
                                 height={100}
@@ -178,7 +179,8 @@ const MehndiSection = () => {
                                     className="rounded-xl overflow-hidden shadow-lg group relative"
                                 >
                                     <Image
-                                        src={photo.src}
+loading="lazy" 
+                        src={photo.src}
                                         alt={photo.alt}
                                         width={500}
                                         height={500}

@@ -81,7 +81,8 @@ const AyushWellnessSection = () => {
             >
               <div className="relative h-[450px] w-full">
                 <Image
-                  src={item.image}
+loading="lazy" 
+  src={item.image}
                   alt={item.title}
                   fill
                   className="object-cover"

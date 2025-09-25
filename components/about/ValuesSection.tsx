@@ -14,6 +14,7 @@ import s3 from "../../public/Images/s3.jpg";
 import m1 from "../../public/Images/m1.webp";
 import m2 from "../../public/Images/m2.webp";
 import m3 from "../../public/Images/s3.jpg";
+import Image from "next/image";
 
 const values = [
   {
@@ -95,7 +96,10 @@ const ValuesSection = () => (
                     }
 
                     return (
-                      <img
+                      <Image
+loading="lazy" 
+        height={100}
+                        width={100}
                         key={imgIndex}
                         src={img}
                         alt=""
@@ -112,12 +116,18 @@ const ValuesSection = () => (
                       else rightPositionClass = "bottom-[-12%] right-[-7%]";
 
                       return (
-                        <img
-                          key={`right-${imgIndex}`}
-                          src={img}
-                          alt=""
-                          className={`absolute h-[190px] w-[150px] rounded-lg transition-all duration-500 ${rightPositionClass}`}
-                        />
+                        <>
+                          <Image
+loading="lazy" 
+            height={100}
+                            width={100}
+                            key={`right-${imgIndex}`}
+                            src={img}
+                            alt=""
+                            className={`absolute h-[190px] w-[150px] rounded-lg transition-all duration-500 ${rightPositionClass}`}
+                          />
+
+                        </>
                       );
                     })}
                 </div>
@@ -125,7 +135,10 @@ const ValuesSection = () => (
                 {/* Mobile images normal stacked */}
                 <div className="grid grid-cols-2 gap-4 md:hidden mb-6">
                   {value.images.map((img, imgIndex) => (
-                    <img
+                    <Image
+loading="lazy" 
+      height={100}
+                      width={100}
                       key={imgIndex}
                       src={img}
                       alt=""
@@ -134,7 +147,10 @@ const ValuesSection = () => (
                   ))}
                   {index === 2 &&
                     value.images2?.map((img, imgIndex) => (
-                      <img
+                      <Image
+loading="lazy" 
+        height={100}
+                        width={100}
                         key={`m-${imgIndex}`}
                         src={img}
                         alt=""

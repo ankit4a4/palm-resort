@@ -49,7 +49,8 @@ const PhotographySection = () => {
                   className="rounded-xl overflow-hidden shadow-lg group relative"
                 >
                   <Image
-                    src={photo.src}
+loading="lazy" 
+    src={photo.src}
                     alt={photo.alt}
                     width={500}       // Fixed width
                     height={500}      // Fixed height

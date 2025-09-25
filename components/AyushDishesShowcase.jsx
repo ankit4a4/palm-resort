@@ -109,7 +109,8 @@ const AyushDishesShowcase = () => {
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden bg-gradient-to-br from-yellow-50 to-yellow-100/30">
                 <Image
-                  src={dish.image}
+loading="lazy" 
+  src={dish.image}
                   alt={dish.name}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"

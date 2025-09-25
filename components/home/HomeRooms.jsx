@@ -253,6 +253,13 @@ function RoomDetailModal({ room, open, onClose }) {
 
 function RoomDetailedModal({ room, open, onClose }) {
   if (!open || !room) return null;
+  const router = useRouter()
+
+   const setLocalId = (id) => {
+      localStorage.setItem("id" , id)
+      router.push("/booknow")
+  }
+
 
   return (
     <div className="fixed inset-0 z-50 bg-black/50 overflow-y-auto">
@@ -357,9 +364,7 @@ function RoomDetailedModal({ room, open, onClose }) {
               <div className="flex gap-4 mt-8">
                 <Button
                   className="flex-1 bg-[#A67A35] hover:bg-[#8c672d] text-black font-semibold"
-                  onClick={() => {
-                    // Handle booking logic
-                  }}
+                  onClick={() => setLocalId(room.id)}
                 >
                   Book Now - {room.price}/night
                 </Button>
@@ -454,8 +459,8 @@ export default function RoomsSection() {
 
                 <div className="flex gap-2">
                   <Button
-                   onClick={() => setLocalId(room.id)}
                     className="flex-1 bg-yellow-700/90 hover:bg-[#8c672d] text-[#f3e9cb] font-semibold"
+                   onClick={() => setLocalId(room.id)}
                   >
                     Book Now
                   </Button>

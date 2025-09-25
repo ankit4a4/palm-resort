@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 const testimonials = [
   {
     name: "SK Yadav",
-    designation : "Senior DR. Ayurveda in national hospital.",
+    designation: "Senior DR. Ayurveda in national hospital.",
     rated: "5/5",
     title: "Yoga Enthusiast",
     image: "/Images/reviews/2.png",
@@ -121,12 +121,12 @@ export default function Testimonials() {
                 <div className="flex items-center gap-[2vw] mb-[2vh] flex-shrink-0">
                   <div className="w-[10vw] h-[10vw] md:w-[3vw] md:h-[3vw] rounded-full overflow-hidden flex-shrink-0">
                     <Image
+                      loading="lazy"
                       src={t.image}
                       alt={t.name}
                       width={100}
                       height={100}
                       className="object-cover w-full h-full"
-                      priority
                     />
                   </div>
                   <div className="flex-grow">

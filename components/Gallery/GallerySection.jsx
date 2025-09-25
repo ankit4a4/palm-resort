@@ -4,14 +4,14 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-import img1 from "../../public/Images/AllPhotos/about-us-1.jpg"
-import img2 from "../../public/Images/AllPhotos/DSC06389.webp"
-import img3 from "../../public/Images/AllPhotos/DSC06396.webp"
-import img4 from "../../public/Images/AllPhotos/DSC06399.webp"
-import img5 from "../../public/Images/AllPhotos/DSC06434.webp"
-import img6 from "../../public/Images/AllPhotos/DSC06460.webp"
-import img7 from "../../public/Images/AllPhotos/DSC06475.webp"
-import img8 from "../../public/Images/AllPhotos/DSC06521.webp"
+import img1 from "../../public/Images/gallery/newg1.jpeg"
+import img2 from "../../public/Images/gallery/newg2.jpeg"
+import img3 from "../../public/Images/gallery/newg3.jpeg"
+import img4 from "../../public/Images/gallery/newg4.jpeg"
+import img5 from "../../public/Images/gallery/newg5.jpeg"
+import img6 from "../../public/Images/gallery/newg6.jpeg"
+import img7 from "../../public/Images/gallery/newg7.jpeg"
+import img8 from "../../public/Images/gallery/newg8.jpeg"
 import img9 from "../../public/Images/AllPhotos/gardenView.webp"
 import img10 from "../../public/Images/AllPhotos/indoorGame1.webp"
 import img11 from "../../public/Images/AllPhotos/mud-house.webp"
@@ -171,7 +171,6 @@ export default function GallerySection() {
                     height={img.height}
                     alt="Gallery image"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    priority={i < 9}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                     <motion.div
@@ -199,11 +198,10 @@ export default function GallerySection() {
             <button
               onClick={loadMore}
               disabled={isLoadingMore}
-              className={`px-8 py-3 bg-amber-600 text-[#f3e9cb] font-medium rounded-full transition-all ${
-                isLoadingMore
-                  ? "opacity-75"
-                  : "hover:bg-amber-700 hover:shadow-lg"
-              }`}
+              className={`px-8 py-3 bg-amber-600 text-[#f3e9cb] font-medium rounded-full transition-all ${isLoadingMore
+                ? "opacity-75"
+                : "hover:bg-amber-700 hover:shadow-lg"
+                }`}
             >
               {isLoadingMore ? (
                 <span className="flex items-center justify-center">

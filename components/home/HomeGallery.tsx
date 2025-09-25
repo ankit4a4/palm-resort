@@ -64,11 +64,11 @@ export default function HomeGallery() {
               onClick={() => setSelectedImage(img)}
             >
               <Image
+                loading="lazy"
                 src={img}
                 alt={`Gallery Image ${index + 1}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
-                priority={index === 0}
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -91,6 +91,7 @@ export default function HomeGallery() {
           <div className="relative w-full" ref={modalRef}>
             <div className="relative w-[95%] md:w-[60%] h-[40vh] md:h-[80vh] mx-auto rounded-[1vw]">
               <Image
+                loading="lazy"
                 src={selectedImage}
                 alt="Popup Image"
                 fill

@@ -6,6 +6,7 @@ import { GiMeditation, GiLotus, GiBowlOfRice } from "react-icons/gi";
 import { MdSpa, MdNaturePeople } from "react-icons/md";
 import img from "../../public/Images/PersonalWellnessImage.jpg"
 import img2 from "../../public/Images/dailyYoga.jpg"
+import Image from "next/image";
 
 export default function AyushWellnessProgramSection() {
   return (
@@ -20,7 +21,7 @@ export default function AyushWellnessProgramSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-            <p className="text-3xl pb-10 text-[#a17633] text-center font-playfair italic">आरोग्यवर्धकं हरितभोजनम् <br /> <span className="mt-6 ">Green food in Enhances Wellness</span></p>
+          <p className="text-3xl pb-10 text-[#a17633] text-center font-playfair italic">आरोग्यवर्धकं हरितभोजनम् <br /> <span className="mt-6 ">Green food in Enhances Wellness</span></p>
           <h1 className="text-yellow-700/90 font-alegreya  italic text-4xl lg:text-6xl font-bold leading-tight mb-4">
             Ayush Wellness Program
           </h1>
@@ -70,7 +71,10 @@ export default function AyushWellnessProgramSection() {
               >
                 <div className="flex md:flex-row flex-col items-start gap-4">
                   <div className="p-3 rounded-full md:w-[40%]">
-                    <img src={img.src} className=" md:w-[100%] rounded-md" alt="Ayush Logo" />
+                    <Image
+loading="lazy" 
+      height={100}
+                      width={100} src={img.src} className=" md:w-[100%] rounded-md" alt="Ayush Logo" />
                   </div>
                   <div className="md:w-[60%]">
                     <h4 className="text-yellow-600 font-alegreya  italic font-semibold text-lg mb-2">
@@ -120,7 +124,10 @@ export default function AyushWellnessProgramSection() {
                   </div>
 
                   <div className="p-3  md:w-[40%]">
-                    <img src={img2.src} className=" md:w-[100%] rounded-md" alt="" />
+                    <Image
+loading="lazy" 
+      height={100}
+                      width={100} src={img2.src} className=" md:w-[100%] rounded-md" alt="" />
                   </div>
                 </div>
               </motion.div>

@@ -126,7 +126,8 @@ const BirthdayParty = () => {
                             className="lg:w-2/3"
                         >
                             <Image
-                                src={img6.src} 
+loading="lazy" 
+                src={img6.src} 
                                 alt="Birthday Celebration"
                                 width={800}
                                 height={600}
@@ -148,7 +149,8 @@ const BirthdayParty = () => {
                                     className="rounded-xl overflow-hidden shadow-md group relative"
                                 >
                                     <Image
-                                        src={photo.src}
+loading="lazy" 
+                        src={photo.src}
                                         alt={photo.alt}
                                         width={400}
                                         height={400}

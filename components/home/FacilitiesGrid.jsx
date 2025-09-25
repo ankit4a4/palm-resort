@@ -460,7 +460,8 @@ const FacilitiesGrid = () => {
               aria-label={`View details about ${item.title}`}
             >
               <Image
-                src={item.image}
+loading="lazy" 
+src={item.image}
                 alt={item.title}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"

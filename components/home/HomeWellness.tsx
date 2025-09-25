@@ -1,8 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import {
   FaSpa,
@@ -31,10 +29,7 @@ export default function HomeWellness() {
   return (
     <section className="md:py-[10vh] py-10 bg-[#A67A35]">
       <div className="mx-auto lg:px-6 md:px-[8vw]">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+        < div
           className="text-center mb-[10vh]"
         >
           <h2 className="text-[6vw] md:text-[2.8vw] capitalize font-playfair font-semibold text-[#f3e9cb] leading-tight">
@@ -46,15 +41,12 @@ export default function HomeWellness() {
             combine ancient healing techniques with modern comfort to deliver a
             truly revitalizing experience.
           </p>
-        </motion.div>
+        </ div>
 
         <div className="space-y-[6vh]">
           {[1, 2, 3].map((row, index) => (
-            <motion.div
+            < div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: index * 0.1 }}
               className={`flex flex-col md:flex-row ${index % 2 === 1 ? "md:flex-row-reverse" : ""
                 } items-center gap-10 bg-[#fbf7f0] shadow-xl rounded-3xl overflow-hidden p-6 md:p-12`}
             >
@@ -63,6 +55,7 @@ export default function HomeWellness() {
                   <div className="space-y-4">
                     <div className="w-full">
                       <Image
+                        loading="lazy"
                         src={img1.src}
                         alt="Body Mind soulRejuvenation"
                         width={800}
@@ -72,6 +65,7 @@ export default function HomeWellness() {
                     </div>
                     <div className="w-full">
                       <Image
+                        loading="lazy"
                         src={img2.src}
                         alt="Body Mind soulRejuvenation"
                         width={800}
@@ -82,6 +76,7 @@ export default function HomeWellness() {
 
                     <div className="grid grid-cols-1 gap-4">
                       <Image
+                        loading="lazy"
                         src={body.src}
                         alt="Wellness Treatment 2"
                         width={200}
@@ -90,6 +85,7 @@ export default function HomeWellness() {
                       />
 
                       <Image
+                        loading="lazy"
                         src={body2.src}
                         alt="Wellness Treatment 2"
                         width={400}
@@ -97,6 +93,7 @@ export default function HomeWellness() {
                         className="object-cover bg-center w-full h-[14vh] md:h-[50vh] rounded-xl"
                       />
                       <Image
+                        loading="lazy"
                         src="https://images.pexels.com/photos/3985263/pexels-photo-3985263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="Wellness Treatment 2"
                         width={400}
@@ -109,6 +106,7 @@ export default function HomeWellness() {
 
                   index === 0 ? (
                     <Image
+                      loading="lazy"
                       src={
                         "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                       }
@@ -123,6 +121,7 @@ export default function HomeWellness() {
 
 
                     <Image
+                      loading="lazy"
                       src={healing.src}
                       alt="Ancient Healing Therapies"
                       width={800}
@@ -315,23 +314,19 @@ In the calm silence of the Shivalik foothills, where prana (life force) pulses t
                   )}
                 </p>
               </div>
-            </motion.div>
+            </ div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+        < div
           className="text-center mt-[8vh]"
         >
-          <Button
+          <button
             onClick={() => router.push("/wellness")}
-            className="bg-[#3c2f23] hover:bg-[#2c241b] text-[#f3e9cb] text-[2.1vh] md:text-[1.2vw] font-medium px-8 py-3 md:px-[3vw] md:py-[1.2vw] rounded-full transition duration-200"
           >
             Explore Wellness
-          </Button>
-        </motion.div>
+          </button>
+        </ div>
       </div>
     </section>
   );

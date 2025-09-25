@@ -99,13 +99,13 @@ const RoomsGrid = () => {
               <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-2xl rounded-xl overflow-hidden transition-all duration-300 flex flex-col">
                 <div className="relative h-64 w-full">
                   <Image
+                    loading="lazy"
                     src={room.images[0]}
                     fill
                     alt={room.title}
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 700px) 100vw, 33vw"
                     style={{ borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}
-                    priority={index < 2}
                   />
                   <div className="absolute top-4 right-4 z-10">
                     <Badge className="bg-[#a17633] text-black font-semibold shadow-lg">

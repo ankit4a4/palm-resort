@@ -70,7 +70,8 @@ const PrivateSessions = () => {
                         className="relative h-96 rounded-2xl overflow-hidden"
                     >
                         <Image
-                            src="https://images.pexels.com/photos/3822695/pexels-photo-3822695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+loading="lazy" 
+            src="https://images.pexels.com/photos/3822695/pexels-photo-3822695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             fill
                             alt="Private Yoga Session"
                             className="object-cover"

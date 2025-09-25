@@ -4,6 +4,7 @@ import img1 from "@/public/Images/AllPhotos/mud-house.webp"
 import img2 from "@/public/Images/swissRooms/1.jpg"
 import img3 from "@/public/Images/familyRoom/3.webp"
 import img4 from "@/public/Images/luxeryRooms/1.webp"
+import Image from "next/image";
 
 const BookNowPage = () => {
     const [nights, setNights] = useState(1);
@@ -92,7 +93,10 @@ const BookNowPage = () => {
                     <>
                         {/* Room Info */}
                         <div className="flex flex-col md:flex-row md:gap-6">
-                            <img
+                           <Image
+loading="lazy" 
+                           height={100}
+                                           width={100}
                                 src={room[index]?.images}
                                 alt={room[index]?.title}
                                 className="w-full md:w-1/2 h-64 object-cover rounded-lg"

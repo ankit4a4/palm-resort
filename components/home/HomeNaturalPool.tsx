@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import poolImage from "@/public/Images/AllPhotos/pool.webp";
-import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
 export default function HomeNaturalPool() {
@@ -24,12 +23,12 @@ export default function HomeNaturalPool() {
             ones, or a quiet moment to soak in the wild serenity around you.
             Here, every swim becomes a gentle communion with nature.
           </p>
-          <Button
+          <button
             onClick={() => router.push("/natural-pool")}
             className="bg-yellow-700/90 text-[#f3e9cb] hover:bg-yellow-600 px-6 py-3 text-base md:text-lg"
           >
             Book Now
-          </Button>
+          </button>
         </div>
 
         {/* Right Image */}

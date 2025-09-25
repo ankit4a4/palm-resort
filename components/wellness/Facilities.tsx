@@ -51,7 +51,8 @@ const Facilities = () => {
                 <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
                   <div className="relative h-48">
                     <Image
-                      src={facility.image}
+loading="lazy" 
+      src={facility.image}
                       fill
                       alt={facility.title}
                       className="object-cover group-hover:scale-105 transition-transform duration-300"

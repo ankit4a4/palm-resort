@@ -15,6 +15,7 @@ import img11 from "@/public/Images/new Images/11.jpg";
 import img12 from "@/public/Images/new Images/package12.jpg";
 import img13 from "@/public/Images/new Images/package13.jpg";
 import img14 from "@/public/Images/new Images/package14.jpg";
+import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -85,7 +86,10 @@ const OurPackages = () => {
             <SwiperSlide key={pkg.id}>
               <div className="group bg-[#fbf7f0] rounded-xl shadow-lg overflow-hidden text-center h-[300px] transition-all duration-500 hover:shadow-xl hover:-translate-y-2 flex flex-col">
                 <div className="relative overflow-hidden h-56">
-                  <img
+                  <Image
+loading="lazy" 
+height={100}
+                width={100}
                     src={pkg.img.src}
                     alt={pkg.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

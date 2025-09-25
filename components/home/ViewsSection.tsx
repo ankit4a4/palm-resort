@@ -57,7 +57,8 @@ const ViewsSection = () => {
           >
             <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src={images[selectedImage].src}
+loading="lazy" 
+src={images[selectedImage].src}
                 fill
                 alt={images[selectedImage].title}
                 className="object-cover transition-all duration-500"
@@ -94,7 +95,8 @@ const ViewsSection = () => {
                 onClick={() => setSelectedImage(index)}
               >
                 <Image
-                  src={image.src}
+loading="lazy" 
+  src={image.src}
                   fill
                   alt={image.title}
                   className="object-cover"

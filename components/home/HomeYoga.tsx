@@ -63,7 +63,8 @@ const YogaHomeSection = () => {
                     >
                         <div className="relative md:w-1/2 h-[30vh] md:h-[50vh]">
                             <Image
-                                src={item.img}
+loading="lazy" 
+                src={item.img}
                                 alt={item.title}
                                 fill
                                 className="object-cover w-full h-full rounded-lg"

@@ -55,7 +55,8 @@ const CuisineSection = () => {
               <Card className="bg-gray-900 border-gray-800 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                 <div className="relative h-64">
                   <Image
-                    src={cuisine.image}
+loading="lazy" 
+    src={cuisine.image}
                     fill
                     alt={cuisine.title}
                     className="object-cover"

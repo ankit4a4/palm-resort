@@ -80,7 +80,8 @@ const ClassesSchedule = () => {
                                 <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-2xl transition-all duration-300 overflow-hidden">
                                     <div className="relative h-64">
                                         <Image
-                                            src={yogaClass.image}
+loading="lazy" 
+                            src={yogaClass.image}
                                             fill
                                             alt={yogaClass.title}
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"

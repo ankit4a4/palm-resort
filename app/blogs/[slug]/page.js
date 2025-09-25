@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { blogs } from "@/components/blogs/blogs.json";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return blogs.map((blog) => ({
@@ -42,7 +43,9 @@ export default function Page({ params }) {
 
   const formatDate = (dateString) => {
     const options = { year: "numeric", month: "long", day: "numeric" };
-    return dateString ? new Date(dateString).toLocaleDateString("en-US", options) : "";
+    return dateString
+      ? new Date(dateString).toLocaleDateString("en-US", options)
+      : "";
   };
 
   const renderContentWithHeadings = () => {
@@ -84,7 +87,9 @@ export default function Page({ params }) {
           {/* Blog Content */}
           <div className="w-full lg:w-8/12">
             <div className="bg-[#fbf7f0] rounded-2xl shadow-lg p-8">
-              <img
+              <Image
+                loading="lazy"                height={100}
+                width={100}
                 src={blog.image}
                 alt={blog.title}
                 className="w-full h-auto object-cover rounded-xl mb-6 shadow-md"
@@ -110,7 +115,9 @@ export default function Page({ params }) {
               </div>
 
               {/* Content */}
-              <div className="prose max-w-none">{renderContentWithHeadings()}</div>
+              <div className="prose max-w-none">
+                {renderContentWithHeadings()}
+              </div>
 
               {/* Tags */}
               <div className="mt-10 pt-6 border-t border-gray-200 flex flex-wrap gap-3">
@@ -140,7 +147,10 @@ export default function Page({ params }) {
                     href={`/blog/${blog.slug}`}
                     className="flex gap-4 items-center group hover:bg-amber-50 rounded-lg p-2 transition"
                   >
-                    <img
+                    <Image
+                      loading="lazy"
+                      height={100}
+                      width={100}
                       src={blog.image}
                       alt={blog.title}
                       className="w-16 h-16 object-cover rounded-lg shadow-sm group-hover:scale-105 transition"
@@ -149,7 +159,9 @@ export default function Page({ params }) {
                       <h4 className="font-medium font-alegreya italic text-amber-800 group-hover:text-amber-600">
                         {blog.title}
                       </h4>
-                      <p className="text-xs text-gray-500">{formatDate(blog.published_date)}</p>
+                      <p className="text-xs text-gray-500">
+                        {formatDate(blog.published_date)}
+                      </p>
                     </div>
                   </Link>
                 ))}
@@ -168,7 +180,10 @@ export default function Page({ params }) {
                     href={`/blog/${blog.slug}`}
                     className="flex gap-4 items-center group hover:bg-amber-50 rounded-lg p-2 transition"
                   >
-                    <img
+                    <Image
+                      loading="lazy"
+                      height={100}
+                      width={100}
                       src={blog.image}
                       alt={blog.title}
                       className="w-16 h-16 object-cover rounded-lg shadow-sm group-hover:scale-105 transition"
@@ -177,7 +192,9 @@ export default function Page({ params }) {
                       <h4 className="font-medium font-alegreya italic text-amber-800 group-hover:text-amber-600">
                         {blog.title}
                       </h4>
-                      <p className="text-xs text-gray-500">{formatDate(blog.published_date)}</p>
+                      <p className="text-xs text-gray-500">
+                        {formatDate(blog.published_date)}
+                      </p>
                     </div>
                   </Link>
                 ))}

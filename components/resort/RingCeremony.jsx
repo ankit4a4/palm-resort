@@ -47,7 +47,8 @@ const RingCeremony = () => {
                         <div className="flex flex-col md:flex-row items-center gap-8" data-aos="fade-up">
                             <div className="md:w-1/2">
                                 <Image
-                                    src={img6.src}// apni image lagana
+loading="lazy" 
+                    src={img6.src}// apni image lagana
                                     alt="Elegant Venue"
                                   width={100}
                                     height={100}
@@ -68,7 +69,8 @@ const RingCeremony = () => {
                         <div className="flex flex-col md:flex-row-reverse items-center gap-8" data-aos="fade-up" data-aos-delay="200">
                             <div className="md:w-1/2">
                                 <Image
-                                    src={img11.src}
+loading="lazy" 
+                    src={img11.src}
                                     alt="Modern Meets Tradition"
                                     width={100}
                                     height={100}
@@ -89,7 +91,8 @@ const RingCeremony = () => {
                         <div className="flex flex-col md:flex-row items-center gap-8" data-aos="fade-up" data-aos-delay="400">
                             <div className="md:w-1/2">
                                 <Image
-                                    src={img2.src}
+loading="lazy" 
+                    src={img2.src}
                                     alt="Celebration & Music"
                                    width={100}
                                     height={100}
@@ -154,7 +157,8 @@ const RingCeremony = () => {
                                     className="rounded-xl overflow-hidden shadow-lg group relative"
                                 >
                                     <Image
-                                        src={photo.src}
+loading="lazy" 
+                        src={photo.src}
                                         alt={photo.alt}
                                         width={500}
                                         height={500}

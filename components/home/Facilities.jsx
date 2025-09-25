@@ -32,7 +32,8 @@ export default function Facilities() {
                         {/* Icon Image */}
                         <div className="w-28 h-28 relative mb-4 ">
                             <Image
-                                src={item.img}
+loading="lazy" 
+                src={item.img}
                                 alt={item.title}
                                 fill
                                 className="rounded-lg"

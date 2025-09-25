@@ -57,7 +57,8 @@ const Instructors = () => {
                                 <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
                                     <div className="relative h-64">
                                         <Image
-                                            src={instructor.image}
+loading="lazy" 
+                            src={instructor.image}
                                             fill
                                             alt={instructor.name}
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"

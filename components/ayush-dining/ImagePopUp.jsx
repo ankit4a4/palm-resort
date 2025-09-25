@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const ImagePopUp = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -18,7 +19,10 @@ const ImagePopUp = () => {
             {/* Image Grid - Always Visible */}
             <div className="grid grid-cols-3 gap-4">
                 {images.map((img, i) => (
-                    <img
+                    <Image
+loading="lazy" 
+height={100}
+                width={100}
                         key={i}
                         src={img}
                         alt={`img-${i}`}
@@ -41,7 +45,10 @@ const ImagePopUp = () => {
                         </button>
 
                         {/* Popup Image */}
-                        <img
+                        <Image
+loading="lazy" 
+height={100}
+                width={100}
                             src={selectedImage}
                             alt="popup"
                             className="rounded-lg shadow-lg w-full max-h-[90vh] object-contain border-4 border-white"

@@ -117,7 +117,8 @@ export default function GallerySection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
 
               <Image
-                src={image.src}
+loading="lazy" 
+src={image.src}
                 alt={image.alt}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"

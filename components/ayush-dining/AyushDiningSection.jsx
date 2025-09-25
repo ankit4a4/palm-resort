@@ -6,6 +6,7 @@ import {
   GiLotus,
 } from "react-icons/gi";
 import { MdSpa } from "react-icons/md";
+import Image from "next/image";
 
 export default function AyushDiningSection() {
   return (
@@ -118,7 +119,10 @@ export default function AyushDiningSection() {
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
-                  <img
+                  <Image
+loading="lazy" 
+height={100}
+                width={100}
                     src="/Images/ayush-dining/11.png"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -154,7 +158,10 @@ export default function AyushDiningSection() {
                   </p>
                 </div>
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
-                  <img
+                  <Image
+loading="lazy" 
+height={100}
+                width={100}
                     src="https://images.pexels.com/photos/5182119/pexels-photo-5182119.jpeg"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -180,7 +187,10 @@ export default function AyushDiningSection() {
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
-                  <img
+                  <Image
+loading="lazy" 
+height={100}
+                width={100}
                     src="https://images.pexels.com/photos/6694164/pexels-photo-6694164.jpeg"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -216,7 +226,10 @@ export default function AyushDiningSection() {
                   </p>
                 </div>
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
-                  <img
+                  <Image
+loading="lazy" 
+height={100}
+                width={100}
                     src="/Images/gallery/13.webp"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -232,7 +245,10 @@ export default function AyushDiningSection() {
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
-                  <img
+                  <Image
+loading="lazy" 
+height={100}
+                width={100}
                     src="https://cdn.pixabay.com/photo/2021/06/28/14/06/rice-6371739_1280.jpg"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -268,7 +284,10 @@ export default function AyushDiningSection() {
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
-                  <img
+                  <Image
+loading="lazy" 
+height={100}
+                width={100}
                     src="/Images/ayush-dining/11.png"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -302,7 +321,10 @@ export default function AyushDiningSection() {
                   </p>
                 </div>
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
-                  <img
+                  <Image
+loading="lazy" 
+height={100}
+                width={100}
                     src="https://cdn.pixabay.com/photo/2022/02/25/22/59/pestle-7034940_1280.jpg"
                     className="h-[14rem] w-full object-cover"
                     alt="a"

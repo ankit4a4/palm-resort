@@ -259,3 +259,8 @@ a.button,
   50%  { opacity: 1; }
   100% { opacity: 0.3; }
 }
+
+
+img{
+  border-radius: 10px;
+}

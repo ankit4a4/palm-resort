@@ -21,6 +21,7 @@ import img16 from "@/public/Images/blogs/17.jpg";
 import img17 from "@/public/Images/blogs/18.jpg";
 import img18 from "@/public/Images/blogs/yaksha1.jpg";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const blogs = [
   {
@@ -186,7 +187,10 @@ const AllBlogsCards = () => {
             className="bg-[#fbf7f0] rounded-2xl shadow-md overflow-hidden flex flex-col"
           >
             {/* Blog Image */}
-            <img
+            <Image
+loading="lazy" 
+height={100}
+                width={100}
               src={blog.image.src}
               alt={blog.title}
               className="h-64 w-full object-cover"

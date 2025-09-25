@@ -56,7 +56,8 @@ const PoolGallery = () => {
                                 className="relative h-64 rounded-2xl overflow-hidden cursor-pointer group"
                             >
                                 <Image
-                                    src={image.src}
+loading="lazy" 
+                    src={image.src}
                                     fill
                                     alt={image.title}
                                     className="object-cover transition-transform duration-300 group-hover:scale-110"

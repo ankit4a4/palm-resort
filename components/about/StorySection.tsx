@@ -77,7 +77,6 @@ const StorySection = () => (
               fill
               alt="Himalayan Retreat"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
-              priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 bg-[#fbf7f0]/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-md">

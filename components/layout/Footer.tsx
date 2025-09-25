@@ -29,7 +29,8 @@ const Footer = () => {
           >
             <Link href="/" className="flex items-center space-x-[1vw]">
               <Image
-                src={logo}
+loading="lazy" 
+src={logo}
                 alt="Logo"
                 className=" object-contain h-[100px] "
               />

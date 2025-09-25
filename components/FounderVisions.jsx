@@ -1,4 +1,5 @@
 // components/FounderVisions.js
+import Image from "next/image";
 
 
 export default function FounderVisions({ founders }) {
@@ -10,7 +11,10 @@ export default function FounderVisions({ founders }) {
           <div className="inline-block mb-8 relative">
             <div className="absolute -inset-4 bg-amber-100 rounded-lg opacity-50"></div>
             <div className="relative rounded-lg overflow-hidden w-60 h-96 mx-auto border-4 border-amber-800 shadow-lg">
-              <img
+              <Image
+                loading="lazy"
+                height={100}
+                width={100}
                 src="/Images/founder.jpeg"
                 alt="Ms. Shivani Agarwal, Founder of Palm Bliss Resort"
                 className="w-full h-full object-cover"
@@ -67,7 +71,10 @@ export default function FounderVisions({ founders }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div className="text-center p-6 bg-amber-50 rounded-lg hover:shadow-md transition-shadow">
               <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img
+                <Image
+                  loading="lazy"
+                  height={100}
+                  width={100}
                   src="/Images/icons/forest-wind.png"
                   alt="Forest Whispers"
                   className="w-8 h-8"
@@ -79,7 +86,10 @@ export default function FounderVisions({ founders }) {
 
             <div className="text-center p-6 bg-amber-50 rounded-lg hover:shadow-md transition-shadow">
               <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img
+                <Image
+                  loading="lazy"
+                  height={100}
+                  width={100}
                   src="/Images/icons/leaf.png"
                   alt="Pure Oxygen"
                   className="w-8 h-8"
@@ -91,7 +101,10 @@ export default function FounderVisions({ founders }) {
 
             <div className="text-center p-6 bg-amber-50 rounded-lg hover:shadow-md transition-shadow">
               <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img
+                <Image
+                  loading="lazy"
+                  height={100}
+                  width={100}
                   src="/Images/icons/heart-care.png"
                   alt="Healing"
                   className="w-8 h-8"
@@ -149,28 +162,43 @@ export default function FounderVisions({ founders }) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           <div className="text-center p-6  rounded-2xl shadow-sm border border-amber-100 hover:shadow-md transition-shadow">
             <div className="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
-              <img src="/Images/icons/yoga.png" alt="Yoga" className="w-7 h-7" />
+              <Image
+                loading="lazy"
+                height={100}
+                width={100}
+                src="/Images/icons/yoga.png" alt="Yoga" className="w-7 h-7" />
             </div>
             <p className="text-amber-800 font-medium text-sm">Here, Yoga isn't just exercise — it's inner alignment.</p>
           </div>
 
           <div className="text-center p-6   rounded-2xl shadow-sm border border-amber-100 hover:shadow-md transition-shadow">
             <div className="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
-              <img src="/Images/icons/leaf.png" alt="Naturopathy" className="w-7 h-7" />
+              <Image
+                loading="lazy"
+                height={100}
+                width={100}
+                src="/Images/icons/leaf.png" alt="Naturopathy" className="w-7 h-7" />
             </div>
             <p className="text-amber-800 font-medium text-sm">Naturopathy heals not only the symptoms but the source.</p>
           </div>
 
           <div className="text-center p-6   rounded-2xl shadow-sm border border-amber-100 hover:shadow-md transition-shadow">
             <div className="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
-              <img src="/Images/icons/meditation.png" alt="Meditation" className="w-7 h-7" />
+              <Image
+                loading="lazy"
+                height={100}
+                width={100} src="/Images/icons/meditation.png" alt="Meditation" className="w-7 h-7" />
             </div>
             <p className="text-amber-800 font-medium text-sm">Meditation becomes a gateway to inner truth.</p>
           </div>
 
           <div className="text-center p-6   rounded-2xl shadow-sm border border-amber-100 hover:shadow-md transition-shadow">
             <div className="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
-              <img src="/Images/icons/wind.png" alt="Spirituality" className="w-7 h-7" />
+              <Image
+                loading="lazy"
+                height={100}
+                width={100}
+                src="/Images/icons/wind.png" alt="Spirituality" className="w-7 h-7" />
             </div>
             <p className="text-amber-800 font-medium text-sm">Spirituality is felt in every breeze, every tree, every breath.</p>
           </div>
