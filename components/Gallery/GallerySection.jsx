@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-
 import img1 from "../../public/Images/gallery/newg1.jpeg"
 import img2 from "../../public/Images/gallery/newg2.jpeg"
 import img3 from "../../public/Images/gallery/newg3.jpeg"
@@ -54,7 +53,6 @@ import img47 from "../../public/Images/gallery/23.jpg"
 import img48 from "../../public/Images/gallery/24.jpg"
 import img49 from "../../public/Images/gallery/25.jpg"
 import img50 from "../../public/Images/gallery/26.jpg"
-
 
 const galleryImages = [
   { src: img1, width: 800, height: 600, size: "medium" },
@@ -112,18 +110,7 @@ const galleryImages = [
   aspect: img.height / img.width,
 }));
 
-
 export default function GallerySection() {
-  const [visibleCount, setVisibleCount] = useState(6);
-  const [isLoadingMore, setIsLoadingMore] = useState(false);
-
-  const loadMore = () => {
-    setIsLoadingMore(true);
-    setTimeout(() => {
-      setVisibleCount((prev) => Math.min(prev + 6, galleryImages.length));
-      setIsLoadingMore(false);
-    }, 500);
-  };
 
   const getRowSpan = (aspect) => {
     if (aspect > 1.5) return 2;
@@ -132,7 +119,7 @@ export default function GallerySection() {
   };
 
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-[#f3e9cb]">
       <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -146,7 +133,7 @@ export default function GallerySection() {
         {/* Perfect Masonry Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[minmax(200px,auto)]">
           <AnimatePresence>
-            {galleryImages.slice(0, visibleCount).map((img, i) => (
+            {galleryImages.map((img, i) => (
               <motion.div
                 key={`${img.src}-${i}`}
                 layout
@@ -188,38 +175,7 @@ export default function GallerySection() {
           </AnimatePresence>
         </div>
 
-        {visibleCount < galleryImages.length && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="text-center mt-12"
-          >
-            <button
-              onClick={loadMore}
-              disabled={isLoadingMore}
-              className={`px-8 py-3 bg-amber-600 text-[#f3e9cb] font-medium rounded-full transition-all ${isLoadingMore
-                ? "opacity-75"
-                : "hover:bg-amber-700 hover:shadow-lg"
-                }`}
-            >
-              {isLoadingMore ? (
-                <span className="flex items-center justify-center">
-                  <motion.span
-                    animate={{ rotate: 360 }}
-                    transition={{ repeat: Infinity, duration: 1 }}
-                    className="inline-block mr-2"
-                  >
-                    ↻
-                  </motion.span>
-                  Loading...
-                </span>
-              ) : (
-                "Load More"
-              )}
-            </button>
-          </motion.div>
-        )}
+       
       </div>
     </section>
   );

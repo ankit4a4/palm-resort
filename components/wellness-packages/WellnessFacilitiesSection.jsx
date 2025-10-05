@@ -76,7 +76,7 @@ export default function WellnessFacilitiesSection() {
               data-aos="flip-up"
               data-aos-delay={index * 50}
               data-aos-duration="800"
-              className="bg-[#fbf7f0]/10 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 border border-white/20 hover:border-white/40 hover:bg-[#fbf7f0]/15 group transform hover:-translate-y-2"
+              className="bg-[#fbf7f0]/10 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 border border[#f3e9cb]/20 hover:border[#f3e9cb]/40 hover:bg-[#fbf7f0]/15 group transform hover:-translate-y-2"
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#fbf7f0] text-[#A67A35] text-xl group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
@@ -92,7 +92,7 @@ export default function WellnessFacilitiesSection() {
 
               {/* Animated border effect on hover */}
               <div className="absolute inset-0 rounded-xl overflow-hidden">
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/30 transition-all duration-700 rounded-xl" />
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border[#f3e9cb]/30 transition-all duration-700 rounded-xl" />
               </div>
             </div>
           ))}

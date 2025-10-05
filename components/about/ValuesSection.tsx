@@ -42,7 +42,7 @@ const values = [
 ];
 
 const ValuesSection = () => (
-  <section className="relative py-24 bg-[#a17633] border-b-2 border-white">
+  <section className="relative py-24 bg-[#a17633] border-b-2 border[#f3e9cb]">
     <div className="container mx-auto px-4 max-w-6xl">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -68,7 +68,7 @@ const ValuesSection = () => (
             className={`relative z-10 ${index % 2 === 0 ? "md:pl-32 md:pr-4" : "md:pr-32 md:pl-4"
               }`}
           >
-            <div className="bg-white/80 relative backdrop-blur-md border-none shadow-xl hover:shadow-2xl transition duration-300 rounded-2xl">
+            <div className=" bg-[#f3e9cb] relative backdrop-blur-md border-none shadow-xl hover:shadow-2xl transition duration-300 rounded-2xl">
               <div className="p-8 relative">
                 {/* Desktop images absolute positioned */}
                 <div className="hidden md:block">
@@ -162,7 +162,7 @@ loading="lazy"
                 <div className="pl-0 md:pl-12">
                   <h3 className="text-2xl flex gap-5 items-center font-alegreya italic font-semibold text-yellow-700/90 mb-2">
                     {value.title}
-                    <div className="w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center ring-4 ring-white z-20">
+                    <div className="w-12 h-12 bg-[#f3e9cb] rounded-full shadow-xl flex items-center justify-center ring-4 ring[#f3e9cb] z-20">
                       <value.icon className="h-7 w-7 text-royal-gold" />
                     </div>
                   </h3>
@@ -179,7 +179,7 @@ loading="lazy"
         ))}
 
         {/* Vertical Line for Timeline Effect (only desktop) */}
-        <div className="absolute top-0 left-8 w-1 h-full bg-white/60 hidden md:block" />
+        <div className="absolute top-0 left-8 w-1 h-full bg-[#f3e9cb]/60 hidden md:block" />
       </div>
     </div>
   </section>

@@ -87,8 +87,8 @@ const HeroSection = ({
         <button
           onClick={() => router.push("/resort")}
           className="px-7 py-3 mt-6 rounded-lg text-[#f3e9cb] 
-  bg-[#a67a35]/40 border border-white/20 
-  backdrop-blur-md shadow-lg hover:bg-[#fff]/60 transition"
+  bg-[#a67a35]/40 border border[#f3e9cb]/20 
+  backdrop-blur-md shadow-lg hover:bg-[#f3e9cb]/60 transition"
         >
           Select your goal
         </button>
@@ -113,7 +113,7 @@ const HeroSection = ({
       >
         <form
           onSubmit={handleSubmit}
-          className="grid grid-cols-2 md:grid-cols-8 gap-px overflow-hidden bg-[#fbf7f0]/5 backdrop-blur-md border border-white/10 rounded-[2vh] md:rounded-[1vw] shadow-[0_4px_30px_rgba(0,0,0,0.4)] text-[#f3e9cb] font-medium text-[1.6vh] md:text-[1vw]"
+          className="grid grid-cols-2 md:grid-cols-8 gap-px overflow-hidden bg-[#fbf7f0]/5 backdrop-blur-md border border[#f3e9cb]/10 rounded-[2vh] md:rounded-[1vw] shadow-[0_4px_30px_rgba(0,0,0,0.4)] text-[#f3e9cb] font-medium text-[1.6vh] md:text-[1vw]"
         >
           {[{ label: "Name", name: "name", type: "text", placeholder: "Your Name" },
             { label: "Phone", name: "phone", type: "tel", placeholder: "Phone Number" }].map(({ label, name, type, placeholder }) => (
@@ -125,7 +125,7 @@ const HeroSection = ({
                 value={formData[name]}
                 onChange={handleChange}
                 placeholder={placeholder}
-                className="bg-transparent border-b border-white/30 focus:border-[#c1a47a] placeholder:text-[#f3e9cb]/40 focus:outline-none transition-all text-[1.5vh] md:text-[1vw]"
+                className="bg-transparent border-b border[#f3e9cb]/30 focus:border-[#c1a47a] placeholder:text-[#f3e9cb]/40 focus:outline-none transition-all text-[1.5vh] md:text-[1vw]"
               />
             </div>
           ))}
@@ -134,7 +134,7 @@ const HeroSection = ({
           {[{ label: "Arrival", name: "arrival" }, { label: "Departure", name: "departure" }].map(({ label, name }) => (
             <div key={name} className="bg-black/60 px-[2vh] py-[2vh] md:px-[2vw] md:py-[1vw] flex flex-col gap-[1vh] md:gap-[1vw]">
               <label className="text-[#f3e9cb]/80 text-[1.4vh] md:text-[1vw]">{label}</label>
-              <div className="flex items-center border-b border-white/30">
+              <div className="flex items-center border-b border[#f3e9cb]/30">
                 <input
                   type="date"
                   name={name}
@@ -157,7 +157,7 @@ const HeroSection = ({
                 name={name}
                 value={formData[name]}
                 onChange={handleChange}
-                className="bg-transparent border-b border-white/30 text-[#f3e9cb] focus:outline-none appearance-none text-[1.5vh] md:text-[1vw]"
+                className="bg-transparent border-b border[#f3e9cb]/30 text-[#f3e9cb] focus:outline-none appearance-none text-[1.5vh] md:text-[1vw]"
               >
                 {options.map((opt) => (
                   <option key={opt} value={opt} className="text-black">

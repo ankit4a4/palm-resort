@@ -4,6 +4,7 @@ import StorySection from '@/components/about/StorySection';
 import ValuesSection from '@/components/about/ValuesSection';
 import HeroSection from '@/components/home/HeroSection';
 import FounderVisions from "@/components/FounderVisions"
+import MadamPicCard from "@/components/about/MadamPicCard"
 
 export default function About() {
 const foundersData = [
@@ -27,6 +28,7 @@ const foundersData = [
       <StorySection />
       <FounderVisions/>
       <ValuesSection />
+      <MadamPicCard />
     </>
   );
 }

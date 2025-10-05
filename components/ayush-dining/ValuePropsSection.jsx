@@ -91,7 +91,7 @@ loading="lazy"
               </div>
               <div className="md:w-3/5 p-8 flex flex-col justify-center">
                 <div className="flex items-center mb-4">
-                  <span className="h-11 w-11 flex items-center justify-center rounded-full bg-[#fbf7f0] shadow ring-2 ring-white/50 mr-4">
+                  <span className="h-11 w-11 flex items-center justify-center rounded-full bg-[#fbf7f0] shadow ring-2 ring[#f3e9cb]/50 mr-4">
                     <Icon className="text-[#A67A35] text-2xl" />
                   </span>
                   <h3 className="text-xl font-semibold font-alegreya  italic text-yellow-700/90">

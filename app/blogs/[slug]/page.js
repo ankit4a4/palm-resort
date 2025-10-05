@@ -14,7 +14,7 @@ export default function Page({ params }) {
 
   if (!blog) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-100 to-amber-200">
+      <div className="min-h-screen flex items-center justify-center bg-[#f3e9cb]">
         <div className="text-center p-8 bg-[#fbf7f0] rounded-xl shadow-xl">
           <h1 className="text-4xl font-bold text-amber-900 font-alegreya italic">
             Blog Not Found
@@ -86,7 +86,7 @@ export default function Page({ params }) {
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Blog Content */}
           <div className="w-full lg:w-8/12">
-            <div className="bg-[#fbf7f0] rounded-2xl shadow-lg p-8">
+            <div className="bbg-[#f3e9cb]/20 rounded-2xl shadow-lg p-8">
               <Image
                 loading="lazy"                height={100}
                 width={100}
@@ -136,7 +136,7 @@ export default function Page({ params }) {
           {/* Sidebar */}
           <div className="w-full lg:w-4/12 space-y-8">
             {/* Related */}
-            <div className="bg-[#fbf7f0] rounded-2xl shadow-md p-6">
+            <div className="bg-[#f3e9cb]/20 rounded-2xl shadow-md p-6">
               <h3 className="text-xl font-bold font-alegreya italic text-amber-900 mb-5">
                 📌 Related Blogs
               </h3>
@@ -169,7 +169,7 @@ export default function Page({ params }) {
             </div>
 
             {/* Recent */}
-            <div className="bg-[#fbf7f0] rounded-2xl shadow-md p-6">
+            <div className="bg-[#f3e9cb]/20 rounded-2xl shadow-md p-6">
               <h3 className="text-xl font-bold font-alegreya italic text-amber-900 mb-5">
                 📰 Recent Blogs
               </h3>

@@ -70,7 +70,7 @@ export default function GallerySection() {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-yellow-50/30 to-white/50">
+    <section className="relative py-20 bg-gradient-to-br from-yellow-50/30 to[#f3e9cb]/50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header Section */}
         <motion.div

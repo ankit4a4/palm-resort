@@ -42,7 +42,7 @@ const OurPackages = () => {
   ];
 
   return (
-    <div className="w-full py-16 bg-gradient-to-b from-amber-50 to-white">
+    <div className="w-full py-16 bg-gradient-to-b from-amber-50 to[#f3e9cb]">
       <div className="container mx-auto px-4 lg:px-12">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-amber-900 relative inline-block">

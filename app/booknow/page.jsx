@@ -88,7 +88,7 @@ const BookNowPage = () => {
 
     return (
         <div className="min-h-screen py-28 bg-[#a1773360] flex items-center justify-center p-4">
-            <div className="bg-white rounded-2xl shadow-lg max-w-3xl w-full p-6">
+            <div className="bg-[#f3e9cb] rounded-2xl shadow-lg max-w-3xl w-full p-6">
                 {!confirmed ? (
                     <>
                         {/* Room Info */}
@@ -139,7 +139,7 @@ loading="lazy"
                                     <p className="text-lg font-semibold">Total: ₹{totalAmount}</p>
                                     <button
                                         onClick={handlePayment}
-                                        className="mt-4 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 rounded-lg transition-colors"
+                                        className="mt-4 w-full bg-yellow-500 hover:bg-yellow-600 text-[#f3e9cb] font-bold py-3 rounded-lg transition-colors"
                                     >
                                         Pay Now
                                     </button>

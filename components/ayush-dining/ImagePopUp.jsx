@@ -38,7 +38,7 @@ height={100}
                     <div className="relative max-w-3xl w-full flex justify-center">
                         {/* Close Button */}
                         <button
-                            className="absolute top-[-40px] right-0 bg-red-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-red-700 transition"
+                            className="absolute top-[-40px] right-0 bg-red-600 text-[#f3e9cb] px-4 py-2 rounded-full shadow-md hover:bg-red-700 transition"
                             onClick={() => setSelectedImage(null)}
                         >
                             ✕
@@ -51,7 +51,7 @@ height={100}
                 width={100}
                             src={selectedImage}
                             alt="popup"
-                            className="rounded-lg shadow-lg w-full max-h-[90vh] object-contain border-4 border-white"
+                            className="rounded-lg shadow-lg w-full max-h-[90vh] object-contain border-4 border[#f3e9cb]"
                         />
                     </div>
                 </div>

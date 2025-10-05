@@ -174,7 +174,7 @@ const blogs = [
 const AllBlogsCards = () => {
   const route = useRouter()
   return (
-    <div className="min-h-screen bg-green-50 py-12 px-4 md:px-12">
+    <div className="min-h-screen bg-[#f3e9cb] py-12 px-4 md:px-12">
       <h1 className="text-3xl md:text-4xl font-bold  font-alegreya  italic text-center text-[#a17633] mb-10">
         Blogs
       </h1>
@@ -188,9 +188,9 @@ const AllBlogsCards = () => {
           >
             {/* Blog Image */}
             <Image
-loading="lazy" 
-height={100}
-                width={100}
+              loading="lazy"
+              height={100}
+              width={100}
               src={blog.image.src}
               alt={blog.title}
               className="h-64 w-full object-cover"
@@ -204,7 +204,7 @@ height={100}
               <p className="text-gray-600 text-sm flex-1 line-clamp-2">{blog.excerpt}</p>
 
               <button
-                type="button"   // 👈 isse reload nahi hoga
+                type="button"
                 onClick={() => route.push(`/blogs/${blog.slug}`)}
                 style={{
                   animation: "blink 1s infinite",

@@ -34,15 +34,15 @@ const YogaHomeSection = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-[6vw] md:text-[2.8vw] font-playfair font-bold text-[#fff]"
+                    className="text-[6vw] md:text-[2.8vw] font-playfair font-bold text-[#f3e9cb]"
                 >
-                    Discover <span className="text-[#fff]">Our Yoga Offerings</span>
+                    Discover <span className="text-[#f3e9cb]">Our Yoga Offerings</span>
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.1 }}
-                    className="text-[2.4vh] md:text-[1.15vw] text-[#fff] mx-auto leading-relaxed"
+                    className="text-[2.4vh] md:text-[1.15vw] text-[#f3e9cb] mx-auto leading-relaxed"
                 >
                     Explore our carefully curated yoga experiences crafted for healing, energy and inner transformation.
                 </motion.p>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FounderVisions({ founders }) {
   return (
-    <section className="w-full py-16 bg-[#fbf7f0]">
+    <section className="w-full py-16 bg-[#FBF6E9]">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Header Section */}
         <div className="text-center mb-12">

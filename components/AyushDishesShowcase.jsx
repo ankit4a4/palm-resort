@@ -104,7 +104,7 @@ const AyushDishesShowcase = () => {
           {dishes.map((dish) => (
             <div
               key={dish.id}
-              className="group bg-[#fbf7f0]/70 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="group bg-[#fbf7f0]/70 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden bg-gradient-to-br from-yellow-50 to-yellow-100/30">
@@ -133,7 +133,7 @@ loading="lazy"
 
         {/* Bottom Section */}
         <div className="mt-20 text-center">
-          <div className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/50 max-w-4xl mx-auto">
+          <div className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border[#f3e9cb]/50 max-w-4xl mx-auto">
             <h3 className="text-yellow-700/90 font-alegreya  italic text-2xl font-bold mb-4">
               A Journey of Wellness Through Food
             </h3>

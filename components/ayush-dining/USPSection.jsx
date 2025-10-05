@@ -71,7 +71,7 @@ export default function USPSection() {
                     Our Core <span className="text-[#f3e9cb]/90">Wellness Principles</span>
                 </h2>
                 <div
-                    className="w-24 h-1.5 mx-auto bg-gradient-to-r from-transparent via-white to-transparent rounded-full"
+                    className="w-24 h-1.5 mx-auto bg-gradient-to-r from-transparent via[#f3e9cb] to-transparent rounded-full"
                     data-aos="fade-down"
                     data-aos-delay="200"
                 />

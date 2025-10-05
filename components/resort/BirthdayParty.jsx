@@ -157,7 +157,7 @@ loading="lazy"
                                         className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-end justify-center p-2">
-                                        <p className="text-white text-xs font-medium drop-shadow-md">
+                                        <p className="text-[#f3e9cb] text-xs font-medium drop-shadow-md">
                                             {photo.alt}
                                         </p>
                                     </div>

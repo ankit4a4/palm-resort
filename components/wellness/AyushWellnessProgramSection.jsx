@@ -39,7 +39,7 @@ export default function AyushWellnessProgramSection() {
         >
 
           {/* Introduction */}
-          <div className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-lg border border-white/50">
+          <div className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-lg border border[#f3e9cb]/50">
             <p className="text-black text-lg lg:text-xl leading-relaxed mb-6">
               At Palm Bliss Resort & Atharva Ayurveda Wellness Retreat, the AYUSH Wellness Program is more than a retreat — it's a soulful reset, guided by India's timeless healing sciences:
               Ayurveda, Yoga, Unani, Siddha and Homeopathy.
@@ -67,7 +67,7 @@ export default function AyushWellnessProgramSection() {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-white/40"
+                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex md:flex-row flex-col items-start gap-4">
                   <div className="p-3 rounded-full md:w-[40%]">
@@ -101,7 +101,7 @@ loading="lazy"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-white/40"
+                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="md:flex items-start gap-4">
 
@@ -137,7 +137,7 @@ loading="lazy"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-white/40"
+                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-yellow-100 rounded-full">
@@ -168,7 +168,7 @@ loading="lazy"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
-                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-white/40"
+                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-yellow-100 rounded-full">
@@ -199,7 +199,7 @@ loading="lazy"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.9 }}
-                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-white/40"
+                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-yellow-100 rounded-full">
@@ -230,7 +230,7 @@ loading="lazy"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 1.0 }}
-                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-white/40"
+                className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-yellow-100 rounded-full">
@@ -263,7 +263,7 @@ loading="lazy"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="bg-[#fbf7f0]/80 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-lg border border-white/60 text-center"
+            className="bg-[#fbf7f0]/80 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-lg border border[#f3e9cb]/60 text-center"
           >
             <p className="text-black text-lg lg:text-xl leading-relaxed font-alegreya italic mb-8">
               Here, time slows down, breath deepens and nature speaks — gently guiding you back to yourself.

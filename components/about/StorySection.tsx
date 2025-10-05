@@ -71,7 +71,7 @@ const StorySection = () => (
           transition={{ duration: 0.7 }}
           className="lg:col-span-3 relative group"
         >
-          <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden shadow-2xl border-4 border-white">
+          <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden shadow-2xl border-4 border[#f3e9cb]">
             <Image
               src="https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg"
               fill

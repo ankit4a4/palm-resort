@@ -39,7 +39,7 @@ export default function AyushDiningSection() {
             </div>
 
             {/* Main Description */}
-            <div className="bg-[#fbf7f0]/60 backdrop-blur-sm px-8 py-3 rounded-2xl shadow-lg border border-white/70 max-w-4xl">
+            <div className="bg-[#fbf7f0]/60 backdrop-blur-sm px-8 py-3 rounded-2xl shadow-lg border border[#f3e9cb]/70 max-w-4xl">
               <p className="text-gray-800 text-lg lg:text-xl leading-relaxed tracking-wide">
                 Step into Ayush Bhoj (Dinning), where food becomes healthy, memory and
                 meditation.
@@ -115,7 +115,7 @@ export default function AyushDiningSection() {
 
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl shadow-lg border border-white/50 overflow-hidden"
+              className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
@@ -144,7 +144,7 @@ height={100}
             {/* Second Card - Content on Left, Image on Right */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl shadow-lg border border-white/50 overflow-hidden"
+              className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5">
@@ -183,7 +183,7 @@ height={100}
             {/* First Card - Image on Left, Content on Right */}
             <motion.div
               whileHover={{ y: -5 }}
-              className="bg-gradient-to-br from-white/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 overflow-hidden"
+              className="bg-gradient-to-br from[#f3e9cb]/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
@@ -212,7 +212,7 @@ height={100}
             {/* Second Card - Content on Left, Image on Right */}
             <motion.div
               whileHover={{ y: -5 }}
-              className="bg-gradient-to-br from-white/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 overflow-hidden"
+              className="bg-gradient-to-br from[#f3e9cb]/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5">
@@ -241,7 +241,7 @@ height={100}
             {/* Third Card - Image on Left, Content on Right */}
             <motion.div
               whileHover={{ y: -5 }}
-              className="bg-gradient-to-br from-white/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 overflow-hidden"
+              className="bg-gradient-to-br from[#f3e9cb]/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
@@ -280,7 +280,7 @@ height={100}
             {/* First Card - Image on Left, Content on Right */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-3xl shadow-xl border border-white/70 overflow-hidden"
+              className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-3xl shadow-xl border border[#f3e9cb]/70 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
@@ -308,7 +308,7 @@ height={100}
             {/* Second Card - Content on Left, Image on Right */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-3xl shadow-xl border border-white/70 overflow-hidden"
+              className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-3xl shadow-xl border border[#f3e9cb]/70 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5">
