@@ -71,11 +71,8 @@ export default function AyushStore() {
       {/* PRODUCTS SECTION */}
       <section
         className="py-20 px-6 md:px-16"
-        style={{
-          background: `linear-gradient(135deg, #FBF7F0 0%, #AA7021 100%)`,
-        }}
       >
-        <h2 className="text-center text-4xl md:text-5xl font-bold mb-12 text-[#f3e9cb] drop-shadow-lg">
+        <h2 className="text-center text-4xl md:text-5xl font-bold mb-12  drop-shadow-lg">
           Our Organic Collection
         </h2>
 

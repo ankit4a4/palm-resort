@@ -5,12 +5,11 @@ import AllBlogsCards from "../../components/blogs/AllBlogsCards"
 const page = () => {
   return (
     <div>
-       <HeroSection
-             
-              welcomeHeading="WELCOME"
-            />
+      <HeroSection
 
-            <AllBlogsCards />
+        welcomeHeading="PRANAM"
+      />
+      <AllBlogsCards />
     </div>
   )
 }

@@ -34,6 +34,7 @@ const Navbar = () => {
     { name: "Our Legacy", href: "/about" },
     { name: "Accommodation", href: "/rooms" },
     { name: "Ayush Bhoj (Dinning)", href: "/ayush-dining" },
+    { name: "Ayush Store", href: "/ayush-store" },
   ];
 
   const navItemsRight = [
@@ -56,7 +57,7 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center justify-between relative">
           {/* Left Nav */}
-          <div className="flex items-center space-x-6 md:space-x-[2vw] z-10">
+          <div className="flex items-center space-x-6 md:space-x-[1.1vw] z-10">
             {navItemsLeft.map((item) => (
               <Link
                 key={item.name}
