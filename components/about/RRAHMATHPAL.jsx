@@ -4,7 +4,7 @@ import img from "../../public/Images/MATHPAL.jpeg"
 const RRAHMATHPAL = () => {
     return (
         <section className="py-16" style={{ backgroundColor: "#f3e9cb" }}>
-            <div className="max-w-7xl shadow-lg border border-gray-200 rounded-lg p-8 mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div className="max-w-7xl shadow-lg  rounded-lg p-8 mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
                 {/* Text Content */}
                 <div className="flex-1 text-center md:text-left order-2 md:order-1">
                     <h2 className="text-5xl font-alegreya italic md:text-6xl font-bold mb-3" style={{ color: "#a17633" }}>
