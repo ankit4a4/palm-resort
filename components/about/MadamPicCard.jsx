@@ -37,7 +37,7 @@ export default function MadamProfile() {
 
   return (
     <section className="w-full py-16 px-6 md:px-16 bg-[#f3e9cb]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="max-w-7xl shadow-lg rounded-lg p-5 border-1 border-gray-800 mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Left Side: Image */}
         <div className="relative w-full md:w-1/3 h-80 md:h-[400px] rounded-lg overflow-hidden shadow-lg">
           <Image
@@ -50,20 +50,11 @@ export default function MadamProfile() {
 
         {/* Right Side: Content */}
         <div className="w-full md:w-1/1 text-gray-900">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#AA7021]">
+          <h2 className="text-4xl font-alegreya italic md:text-5xl font-bold mb-4 text-[#AA7021]">
             Dr. Urmilla N. Pandey
           </h2>
           <p className="text-lg mb-4">
-            Dr. Urmilla N. Pandey is a highly experienced Yoga and Rekhi teacher
-            committed to promoting holistic health, wellness, and mindfulness.
-            Her expertise blends physical postures, breathing techniques, and
-            meditation to enhance flexibility, energy, and mental clarity.
-          </p>
-          <p className="text-base mb-6">
-            With a deep connection to traditional healing, she guides her
-            students to achieve balance, strength, and inner peace. Her
-            approach nurtures both body and soul, making every session a
-            transformative experience.
+            We envision a world where yoga therapy is widely recognized and utilized as a powerful tool for healing and transformation. By integrating the principles of yoga with modern medical and psychological knowledge, we aim to bridge the gap between traditional healing practices and contemporary healthcare.
           </p>
 
           {/* Button */}
@@ -71,7 +62,7 @@ export default function MadamProfile() {
             onClick={() => setIsOpen(true)}
             className="bg-[#AA7021] text-[#f3e9cb] font-semibold px-6 py-3 rounded-full hover:bg-[#8c5d18] transition shadow-md"
           >
-            View Madam Pics
+            View  Dr. Urmilla N. Pandey Pics
           </button>
         </div>
       </div>
@@ -79,7 +70,7 @@ export default function MadamProfile() {
       {/* Popup Modal */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
-          <div className="bg-[#A17633] rounded-xl w-full max-w-2xl p-6 relative shadow-2xl">
+          <div className="bg-[#A17633] rounded-xl w-full max-w-2xl p-10 relative shadow-2xl">
             {/* Close Button */}
             <button
               onClick={() => setIsOpen(false)}

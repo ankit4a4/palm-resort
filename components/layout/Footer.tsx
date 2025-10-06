@@ -57,6 +57,7 @@ src={logo}
                 { name: "Our Legacy", href: "/about" },
                 { name: "Accommodation", href: "/rooms" },
                 { name: "Ayush Bhoj (Dinning)", href: "/ayush-dining" },
+                { name: "Ayush Store", href: "/ayush-store" },
                 { name: "Ayush Wellness", href: "/wellness" },
                 { name: "Wellness Packages", href: "/wellness-packages" },
                 { name: "Gallery", href: "/gallery" },

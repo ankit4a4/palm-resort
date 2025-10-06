@@ -5,6 +5,7 @@ import ValuesSection from '@/components/about/ValuesSection';
 import HeroSection from '@/components/home/HeroSection';
 import FounderVisions from "@/components/FounderVisions"
 import MadamPicCard from "@/components/about/MadamPicCard"
+import RRAHMATHPAL from "@/components/about/RRAHMATHPAL"
 
 export default function About() {
 const foundersData = [
@@ -29,6 +30,7 @@ const foundersData = [
       <FounderVisions/>
       <ValuesSection />
       <MadamPicCard />
+      <RRAHMATHPAL />
     </>
   );
 }
