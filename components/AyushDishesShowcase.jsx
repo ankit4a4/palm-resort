@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import img from "../public/Images/giloy_juice.webp"
+// import img from "/images/giloyjuice.jpg";
+import img from "../public/giloyjuice.jpg"
 
 const AyushDishesShowcase = () => {
   const dishes = [
