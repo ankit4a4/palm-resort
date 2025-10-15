@@ -6,7 +6,7 @@ const PrivateSessions = () => {
     return (
         <section className="py-20 bg-black text-[#f3e9cb]">
             <div className="container mx-auto px-4">
-                <motion.div
+                <div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -18,10 +18,10 @@ const PrivateSessions = () => {
                     <p className="text-lg text-gray-300 max-w-2xl mx-auto">
                         Personalized yoga instruction tailored to your individual needs and goals
                     </p>
-                </motion.div>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <motion.div
+                    <div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -61,9 +61,9 @@ const PrivateSessions = () => {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
 
-                    <motion.div
+                    <div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -76,7 +76,7 @@ loading="lazy"
                             alt="Private Yoga Session"
                             className="object-cover"
                         />
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

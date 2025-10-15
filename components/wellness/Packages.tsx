@@ -8,7 +8,7 @@ const Packages = () => {
     <>
       <section className="py-20 bg-black text-[#f3e9cb]">
         <div className="container mx-auto px-4">
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -20,7 +20,7 @@ const Packages = () => {
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Comprehensive wellness packages for the ultimate rejuvenation experience
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -44,7 +44,7 @@ const Packages = () => {
               }
             ]
               .map((package_item, index) => (
-                <motion.div
+                <div
                   key={index}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ const Packages = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               ))}
           </div>
         </div>

@@ -42,7 +42,7 @@ const FeaturesSection = () => {
         <>
             <section className="py-20 bg-[#fbf7f0]">
                 <div className="container mx-auto px-4">
-                    <motion.div
+                    <div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -54,11 +54,11 @@ const FeaturesSection = () => {
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Discover the innovative features that make our natural pool a unique aquatic experience
                         </p>
-                    </motion.div>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {features.map((feature, index) => (
-                            <motion.div
+                            <div
                                 key={index}
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ const FeaturesSection = () => {
                                         </p>
                                     </CardContent>
                                 </Card>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>

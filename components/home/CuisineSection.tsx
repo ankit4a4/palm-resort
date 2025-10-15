@@ -29,7 +29,7 @@ const CuisineSection = () => {
   return (
     <section className="py-20 bg-black text-[#f3e9cb]">
       <div className="container mx-auto px-4">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -42,11 +42,11 @@ const CuisineSection = () => {
             Embark on a gastronomic journey with our world-class dining experiences, 
             featuring both traditional and contemporary cuisines
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {cuisines.map((cuisine, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -101,12 +101,12 @@ loading="lazy"
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Additional Info */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -136,7 +136,7 @@ loading="lazy"
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

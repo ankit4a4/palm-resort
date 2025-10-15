@@ -56,7 +56,7 @@ const rooms = [
     title: "Family Suite",
     description:
       "Perfect for families with connecting rooms and child-friendly amenities.",
-    price: "₹7,999",
+    price: "₹5,500",
     capacity: "2 Adults + 2 Children",
     amenities: [
       "Connecting Rooms",
@@ -72,9 +72,9 @@ const rooms = [
     title: "Luxury Room",
     description:
       "Finest comfort with breathtaking mountain views, modern interiors and exquisite service.",
-    price: "₹8,999",
+    price: "₹5,500",
     capacity: "2 Adults",
-    amenities: ["Mountain View", "Balcony", "King Bed", "Sitting Area"],
+    amenities: ["Mountain View", "King Bed", "Sitting Area"],
     images: [luxury1, luxury2, luxury3, luxury4],
     features: [Wifi, Car, Coffee, Tv, Wind, Users],
   },
@@ -88,7 +88,7 @@ const RoomsGrid = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {rooms.map((room, index) => (
-            <motion.div
+            <div
               key={room.id}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +152,7 @@ const RoomsGrid = () => {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

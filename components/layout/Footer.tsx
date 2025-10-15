@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="w-[90vw] max-w-[120vw] mx-auto px-[2vw]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[4vw]">
           {/* Brand */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 2 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -39,10 +39,10 @@ src={logo}
               Experience luxury and tranquility in our world-class resort, where
               every moment is crafted to perfection.
             </p>
-          </motion.div>
+          </div>
 
           {/* Quick Links */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 2 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -74,10 +74,10 @@ src={logo}
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Contact Info */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 2 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -115,10 +115,10 @@ src={logo}
                 </span>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Social Media */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 2 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -146,7 +146,7 @@ src={logo}
               Stay connected for exclusive offers and updates from Palm Bliss
               Resort.
             </p>
-          </motion.div>
+          </div>
         </div>
 
 
@@ -168,7 +168,7 @@ src={logo}
 
         </div>
         {/* Bottom Bar */}
-        <motion.div
+        <div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -177,7 +177,7 @@ src={logo}
           <p className="text-[#f3e9cb] font-[600] text-[3.5vw] md:text-[1vw] pb-5 md:pb-[1vw]">
             © 2025 Palm Bliss Resort. All rights reserved. Content copyright by Shivani Agarwal.
           </p>
-        </motion.div>
+        </div>
       </div>
     </footer>
   );

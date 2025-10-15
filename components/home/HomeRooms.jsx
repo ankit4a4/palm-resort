@@ -146,7 +146,7 @@ function RoomImageSlider({ images }) {
   return (
     <div className="relative w-full h-[32rem] bg-gray-100 rounded-xl overflow-hidden">
       <AnimatePresence mode="wait">
-        <motion.div
+        <div
           key={current}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -161,7 +161,7 @@ function RoomImageSlider({ images }) {
             style={{ objectFit: "cover" }}
             className="w-full h-full"
           />
-        </motion.div>
+        </div>
       </AnimatePresence>
       <button
         aria-label="Previous Image"
@@ -191,7 +191,7 @@ function RoomDetailModal({ room, open, onClose }) {
   if (!open || !room) return null;
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 md:px-2">
-      <motion.div
+      <div
         initial={{ scale: 0.94, opacity: 0, y: 100 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.94, opacity: 0, y: 100 }}
@@ -246,7 +246,7 @@ function RoomDetailModal({ room, open, onClose }) {
             </Button>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
@@ -264,7 +264,7 @@ function RoomDetailedModal({ room, open, onClose }) {
   return (
     <div className="fixed inset-0 z-50 bg-black/50 overflow-y-auto">
       <div className="min-h-screen flex items-start justify-center p-4">
-        <motion.div
+        <div
           initial={{ scale: 0.94, opacity: 0, y: 100 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.94, opacity: 0, y: 100 }}
@@ -378,7 +378,7 @@ function RoomDetailedModal({ room, open, onClose }) {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

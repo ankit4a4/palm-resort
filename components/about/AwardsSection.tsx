@@ -24,7 +24,7 @@ const awards = [
 const AwardsSection = () => (
   <section className="py-24 bg-[#F8F3E7] text-gray-800">
     <div className="container mx-auto px-4 max-w-6xl">
-      <motion.div
+      <div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -36,11 +36,11 @@ const AwardsSection = () => (
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Our commitment to excellence has been recognized by industry leaders worldwide
         </p>
-      </motion.div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {awards.map((award, index) => (
-          <motion.div
+          <div
             key={index}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ const AwardsSection = () => (
             <div className="text-sm text-gray-500">
               {award.category}
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

@@ -5,6 +5,7 @@ import { FaLeaf, FaHeart, FaSun } from "react-icons/fa";
 import { GiMeditation, GiLotus, GiBowlOfRice } from "react-icons/gi";
 import { MdSpa, MdNaturePeople } from "react-icons/md";
 import img from "../../public/Images/PersonalWellnessImage.jpg"
+import img1 from "../../public/PersonalConsultations.jpg"
 import img2 from "../../public/Images/dailyYoga.jpg"
 import Image from "next/image";
 
@@ -15,7 +16,7 @@ export default function AyushWellnessProgramSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Header Section */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -28,10 +29,10 @@ export default function AyushWellnessProgramSection() {
           <h2 className="text-yellow-600 font-alegreya  italic text-2xl lg:text-3xl font-alegreya italic  mb-8">
             A Journey Into Balance, Born From The Roots Of Nature
           </h2>
-        </motion.div>
+        </div>
 
         {/* Main Content */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -51,7 +52,7 @@ export default function AyushWellnessProgramSection() {
           </div>
 
           {/* What Awaits You Section */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -63,7 +64,7 @@ export default function AyushWellnessProgramSection() {
             <div className="grid md:grid-cols-2 gap-6">
 
               {/* Feature Item 1 */}
-              <motion.div
+              <div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
@@ -72,9 +73,13 @@ export default function AyushWellnessProgramSection() {
                 <div className="flex md:flex-row flex-col items-start gap-4">
                   <div className="p-3 rounded-full md:w-[40%]">
                     <Image
-loading="lazy" 
-      height={100}
+                      loading="lazy"
+                      height={100}
                       width={100} src={img.src} className=" md:w-[100%] rounded-md" alt="Ayush Logo" />
+                    <Image
+                      loading="lazy"
+                      height={100}
+                      width={100} src={img1.src} className=" md:w-[100%] rounded-md" alt="Ayush Logo" />
                   </div>
                   <div className="md:w-[60%]">
                     <h4 className="text-yellow-600 font-alegreya  italic font-semibold text-lg mb-2">
@@ -94,10 +99,10 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 2 */}
-              <motion.div
+              <div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
@@ -125,15 +130,15 @@ loading="lazy"
 
                   <div className="p-3  md:w-[40%]">
                     <Image
-loading="lazy" 
-      height={100}
+                      loading="lazy"
+                      height={100}
                       width={100} src={img2.src} className=" md:w-[100%] rounded-md" alt="" />
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 3 */}
-              <motion.div
+              <div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
@@ -161,10 +166,10 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 4 */}
-              <motion.div
+              <div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
@@ -192,10 +197,10 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 5 */}
-              <motion.div
+              <div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.9 }}
@@ -223,10 +228,10 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 6 */}
-              <motion.div
+              <div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 1.0 }}
@@ -254,12 +259,12 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Inspirational Quote */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
@@ -277,10 +282,10 @@ loading="lazy"
                 A time to breathe. A space to heal. A path to wholeness.
               </p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Call to Action */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.4 }}
@@ -289,8 +294,8 @@ loading="lazy"
             <button className="px-10 py-4 bg-yellow-700/90 text-[#f3e9cb] rounded-2xl hover:bg-yellow-700 transition-all duration-300 hover:scale-105 hover:shadow-xl font-semibold text-lg">
               Begin Your Ayush Journey
             </button>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -17,7 +17,7 @@ const PhotographySection = () => {
     <section className="py-20 px-6 bg-gradient-to-b from-amber-50 via-yellow-50 to-orange-100">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -28,11 +28,11 @@ const PhotographySection = () => {
             Memories & Photography
           </h2>
           <div className="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full shadow-md"></div>
-        </motion.div>
+        </div>
 
         <div className="flex flex-col lg:flex-row gap-14 items-start">
           {/* Left: Image Grid */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: -60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -42,7 +42,7 @@ const PhotographySection = () => {
             {/* Mobile: 2 cols, Desktop: 3 cols */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
               {photos.map((photo) => (
-                <motion.div
+                <div
                   key={photo.id}
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 200, damping: 15 }}
@@ -61,13 +61,13 @@ loading="lazy"
                       {photo.alt}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Right: Text Content */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -94,17 +94,17 @@ loading="lazy"
                 "Natural Golden Lighting",
                 "High Resolution Images",
               ].map((item, i) => (
-                <motion.div
+                <div
                   key={i}
                   whileHover={{ y: -4 }}
                   className="bg-amber-100 rounded-full py-2 px-5 text-amber-800 flex items-center shadow-sm"
                 >
                   <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
                   {item}
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

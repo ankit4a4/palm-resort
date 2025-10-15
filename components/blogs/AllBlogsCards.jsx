@@ -181,7 +181,7 @@ const AllBlogsCards = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogs.map((blog) => (
-          <motion.div
+          <div
             key={blog.id}
             whileHover={{ scale: 1.05 }}
             className="bg-[#fbf7f0] rounded-2xl shadow-md overflow-hidden flex flex-col"
@@ -222,7 +222,7 @@ const AllBlogsCards = () => {
               </button>
 
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

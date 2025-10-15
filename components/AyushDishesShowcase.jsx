@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
-// import img from "/images/giloyjuice.jpg";
-import img from "../public/giloyjuice.jpg"
+import img from "../public/giloyjuice.jpeg"
 
 const AyushDishesShowcase = () => {
   const dishes = [
@@ -86,7 +85,7 @@ const AyushDishesShowcase = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-yellow-50 to-yellow-100">
+    <section className="py-16 bg-[#fdfaf6]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -110,8 +109,8 @@ const AyushDishesShowcase = () => {
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden bg-gradient-to-br from-yellow-50 to-yellow-100/30">
                 <Image
-loading="lazy" 
-  src={dish.image}
+                  loading="lazy"
+                  src={dish.image}
                   alt={dish.name}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"

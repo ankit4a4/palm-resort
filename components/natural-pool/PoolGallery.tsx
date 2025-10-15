@@ -6,7 +6,7 @@ const PoolGallery = () => {
         <>
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4">
-                    <motion.div
+                    <div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -18,7 +18,7 @@ const PoolGallery = () => {
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Experience the beauty of our natural pool through different times of day
                         </p>
-                    </motion.div>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
@@ -47,7 +47,7 @@ const PoolGallery = () => {
                                 title: 'Mountain Reflection'
                             }
                         ].map((image, index) => (
-                            <motion.div
+                            <div
                                 key={index}
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
@@ -68,7 +68,7 @@ loading="lazy"
                                         {image.title}
                                     </h3>
                                 </div>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>

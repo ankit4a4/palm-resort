@@ -15,7 +15,7 @@ const StorySection = () => (
 
 
       {/* === Section Header === */}
-      <motion.div
+      <div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -29,12 +29,12 @@ const StorySection = () => (
         <h2 className="text-4xl md:text-6xl font-playfair italic font-bold text-yellow-700/90">
           Our <span className="">Story</span>
         </h2>
-      </motion.div>
+      </div>
 
       {/* === Main Content Grid === */}
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
         {/* === Left Column (Text) === */}
-        <motion.div
+        <div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -62,10 +62,10 @@ const StorySection = () => (
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* === Right Column (Image) === */}
-        <motion.div
+        <div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
@@ -84,7 +84,7 @@ const StorySection = () => (
               <span className="text-sm font-medium text-gray-800">Shivalik foot hills</span>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
     </div>

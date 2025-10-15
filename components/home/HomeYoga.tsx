@@ -30,22 +30,22 @@ const YogaHomeSection = () => {
             className="bg-[#A67A35] py-10 md:py-[12vh] px-6 md:px-[8vw]">
             {/* Heading */}
             <div className="text-center space-y-6 mb-[10vh]">
-                <motion.h2
+                <h2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                     className="text-[6vw] md:text-[2.8vw] font-playfair font-bold text-[#f3e9cb]"
                 >
                     Discover <span className="text-[#f3e9cb]">Our Yoga Offerings</span>
-                </motion.h2>
-                <motion.p
+                </h2>
+                <p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                     className="text-[2.4vh] md:text-[1.15vw] text-[#f3e9cb] mx-auto leading-relaxed"
                 >
                     Explore our carefully curated yoga experiences crafted for healing, energy and inner transformation.
-                </motion.p>
+                </p>
             </div>
 
             {/* Rows */}
@@ -53,7 +53,7 @@ const YogaHomeSection = () => {
 
                 className="md:space-y-[10vh] space-y-10 ">
                 {yogaData.map((item, index) => (
-                    <motion.div
+                    <div
                         key={index}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -80,12 +80,12 @@ loading="lazy"
                                 </p>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
 
             {/* CTA Button */}
-            <motion.div
+            <div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -96,7 +96,7 @@ loading="lazy"
                     className="bg-[#C9A062] hover:bg-[#b88d4f] text-[#f3e9cb] text-[2vh] md:text-[1.2vw] font-medium px-8 py-3 md:px-[3vw] md:py-[1vw] rounded-full transition duration-200">
                     Explore All Yoga Offerings
                 </Button>
-            </motion.div>
+            </div>
         </section>
     );
 };

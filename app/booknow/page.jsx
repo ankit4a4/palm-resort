@@ -35,14 +35,14 @@ const BookNowPage = () => {
         {
             id: 2,
             title: "Family Suite",
-            price: 7999,
+            price: 5500,
             capacity: "2 Adults + 2 Children",
             images: img3.src,
         },
         {
             id: 3,
             title: "Luxury Room",
-            price: 8999,
+            price: 5500,
             capacity: "2 Adults",
             images: img4.src,
         },

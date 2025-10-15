@@ -9,7 +9,17 @@ const RRAHMATHPAL = () => {
                 {/* TOP SECTION (Left + Right) */}
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
 
-                    {/* LEFT SIDE - Heading + Intro */}
+                    {/* LEFT SIDE - Image */}
+                     <div className="flex-shrink-0">
+                        <img
+                            src={img.src}
+                            alt="Irra H Mathpal"
+                            className="w-72 h-72 md:w-80 md:h-80 rounded-xl object-cover shadow-2xl"
+                        />
+                    </div>
+
+                    {/* RIGHT SIDE - Heading + Intro*/}
+
                     <div className="flex-1 text-center md:text-left">
                         <h2
                             className="text-5xl font-alegreya italic md:text-6xl font-bold mb-3"
@@ -37,14 +47,8 @@ const RRAHMATHPAL = () => {
 
                     </div>
 
-                    {/* RIGHT SIDE - Image */}
-                    <div className="flex-shrink-0">
-                        <img
-                            src={img.src}
-                            alt="Irra H Mathpal"
-                            className="w-72 h-72 md:w-80 md:h-80 rounded-xl object-cover shadow-2xl"
-                        />
-                    </div>
+                    
+                   
                 </div>
 
                 {/* BOTTOM SECTION - Full width detailed content */}

@@ -93,7 +93,7 @@ export default function Testimonials() {
   return (
     <section className="py-10 md:py-[10vh] bg-[#fbf7f0]">
       <div className="w-[90vw] max-w-[120vw] mx-auto px-[2vw]">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 5 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -106,11 +106,11 @@ export default function Testimonials() {
             Hear from our valued guests who have experienced peace, beauty and
             rejuvenation
           </p>
-        </motion.div>
+        </div>
 
         <Slider {...settings}>
           {testimonials.map((t, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -145,7 +145,7 @@ export default function Testimonials() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </Slider>
       </div>

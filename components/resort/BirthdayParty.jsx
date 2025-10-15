@@ -103,7 +103,7 @@ const BirthdayParty = () => {
             <section className="py-20 px-6 bg-gradient-to-b from-amber-50 via-yellow-50 to-orange-100">
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
-                    <motion.div
+                    <div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
@@ -114,11 +114,11 @@ const BirthdayParty = () => {
                             Memories & Photography
                         </h2>
                         <div className="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full shadow-md"></div>
-                    </motion.div>
+                    </div>
 
                     <div className="flex flex-col lg:flex-row gap-10 items-start">
                         {/* Left Big Image */}
-                        <motion.div
+                        <div
                             initial={{ opacity: 0, x: -60 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.7 }}
@@ -133,10 +133,10 @@ loading="lazy"
                                 height={600}
                                 className="rounded-2xl shadow-xl object-cover w-full h-full"
                             />
-                        </motion.div>
+                        </div>
 
                         {/* Right Collage */}
-                        <motion.div
+                        <div
                             initial={{ opacity: 0, x: 60 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.7 }}
@@ -163,7 +163,7 @@ loading="lazy"
                                     </div>
                                 </div>
                             ))}
-                        </motion.div>
+                        </div>
                     </div>
 
                     {/* Text Content */}

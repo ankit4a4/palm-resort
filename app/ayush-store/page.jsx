@@ -48,7 +48,7 @@ export default function AyushStore() {
         />
         <div className="absolute inset-0 bg-black/60"></div>
 
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -65,7 +65,7 @@ export default function AyushStore() {
           <button className="bg-[#AA7021] hover:bg-[#8c5d18] text-[#f3e9cb] px-6 py-3 rounded-full text-lg font-semibold transition">
             Explore Products
           </button>
-        </motion.div>
+        </div>
       </section>
 
       {/* PRODUCTS SECTION */}
@@ -78,7 +78,7 @@ export default function AyushStore() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {products.map((item, index) => (
-            <motion.div
+            <div
               key={index}
               whileHover={{ scale: 1.05 }}
               className="bg-[#f3e9cb]/90 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition"
@@ -99,7 +99,7 @@ export default function AyushStore() {
                   Buy Now
                 </button>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>

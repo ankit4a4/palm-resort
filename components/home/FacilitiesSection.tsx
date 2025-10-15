@@ -45,7 +45,7 @@ const FacilitiesSection = () => {
   return (
     <section className="py-20 bg-[#fbf7f0]">
       <div className="container mx-auto px-4">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -57,11 +57,11 @@ const FacilitiesSection = () => {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Discover our premium amenities designed to enhance your stay and create unforgettable experiences
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {facilities.map((facility, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -107,12 +107,12 @@ const FacilitiesSection = () => {
                   </Link>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Stats Section */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -152,7 +152,7 @@ const FacilitiesSection = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

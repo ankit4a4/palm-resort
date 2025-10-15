@@ -46,7 +46,7 @@ const Treatments = () => {
         <>
             <section className="py-20 bg-[#fbf7f0]">
                 <div className="container mx-auto px-4">
-                    <motion.div
+                    <div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -58,11 +58,11 @@ const Treatments = () => {
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Experience our curated selection of luxury spa treatments designed to heal and restore
                         </p>
-                    </motion.div>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {treatments.map((treatment, index) => (
-                            <motion.div
+                            <div
                                 key={index}
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ loading="lazy"
                                         </Button>
                                     </CardContent>
                                 </Card>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>

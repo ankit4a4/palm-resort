@@ -58,7 +58,7 @@ const AyushWellnessSection = () => {
 
 
         {/* What Awaits You Header */}
-        {/* <motion.div
+        {/* <div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -67,12 +67,12 @@ const AyushWellnessSection = () => {
           <h3 className="text-3xl md:text-4xl font-bold font-playfair text-yellow-700 mb-4">
             🌼 What Awaits You:
           </h3>
-        </motion.div> */}
+        </div> */}
 
         {/* Wellness Systems Grid */}
         <div className="flex flex-col gap-12">
           {systems.map((item, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -100,12 +100,12 @@ loading="lazy"
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Inspirational Quote Section */}
-        {/* <motion.div
+        {/* <div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
@@ -123,10 +123,10 @@ loading="lazy"
               1 time to breathe. A space to heal. A path to wholeness.
             </p>
           </div>
-        </motion.div> */}
+        </div> */}
 
         {/* Closing CTA */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
@@ -139,7 +139,7 @@ loading="lazy"
             Begin Your Ayush Journey
             <ExternalLink />
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

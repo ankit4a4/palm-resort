@@ -100,7 +100,7 @@ const galleryImages = [
   { src: img43, width: 800, height: 600, size: "medium" },
   { src: img44, width: 700, height: 900, size: "tall" },
   { src: img45, width: 700, height: 900, size: "tall" },
-  { src: img46, width: 700, height: 900, size: "tall" },
+  // { src: img46, width: 700, height: 900, size: "tall" },
   { src: img47, width: 900, height: 600, size: "wide" },
   { src: img48, width: 800, height: 600, size: "medium" },
   { src: img49, width: 700, height: 900, size: "tall" },
@@ -121,20 +121,20 @@ export default function GallerySection() {
   return (
     <section className="py-20 px-4 bg-[#f3e9cb]">
       <div className="max-w-7xl mx-auto">
-        <motion.h2
+        <h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-4xl font-bold font-alegreya  italic text-center mb-16 text-yellow-700/90"
         >
           Our Gallery
-        </motion.h2>
+        </h2>
 
         {/* Perfect Masonry Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[minmax(200px,auto)]">
           <AnimatePresence>
             {galleryImages.map((img, i) => (
-              <motion.div
+              <div
                 key={`${img.src}-${i}`}
                 layout
                 initial={{ opacity: 0, scale: 0.98 }}
@@ -160,17 +160,17 @@ export default function GallerySection() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                    <motion.div
+                    <div
                       initial={{ y: 20 }}
                       animate={{ y: 0 }}
                       transition={{ duration: 0.3 }}
                       className="text-[#f3e9cb]"
                     >
                       {/* Optional caption */}
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </AnimatePresence>
         </div>

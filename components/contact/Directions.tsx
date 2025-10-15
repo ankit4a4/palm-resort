@@ -24,7 +24,7 @@ const Directions = () => {
     <>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -38,11 +38,11 @@ const Directions = () => {
               Find your way to The Palm Bliss Resort in Uttarakhand with our
               detailed directions
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {directions.map((direction, index) => (
-              <motion.div
+              <div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -68,12 +68,12 @@ const Directions = () => {
                     </p>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* Map */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -89,7 +89,7 @@ const Directions = () => {
               referrerPolicy="no-referrer-when-downgrade"
               title="The Palm Bliss Resort Location"
             ></iframe>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

@@ -44,7 +44,7 @@ const values = [
 const ValuesSection = () => (
   <section className="relative py-24 bg-[#a17633] border-b-2 border[#f3e9cb]">
     <div className="container mx-auto px-4 max-w-6xl">
-      <motion.div
+      <div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
@@ -56,11 +56,11 @@ const ValuesSection = () => (
         <p className="text-lg text-[#f3e9cb]/90 max-w-2xl mx-auto">
           Rooted in wellness, nature and inner balance — the essence of Palm Bliss.
         </p>
-      </motion.div>
+      </div>
 
       <div className="space-y-[100px] relative">
         {values.map((value, index) => (
-          <motion.div
+          <div
             key={index}
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -175,7 +175,7 @@ loading="lazy"
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
 
         {/* Vertical Line for Timeline Effect (only desktop) */}

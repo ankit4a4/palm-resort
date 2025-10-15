@@ -117,7 +117,7 @@ loading="lazy"
             <section className="py-20 px-6 bg-gradient-to-b from-amber-50 via-yellow-50 to-orange-100">
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
-                    <motion.div
+                    <div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
@@ -128,7 +128,7 @@ loading="lazy"
                             Memories & Photography
                         </h2>
                         <div className="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full shadow-md"></div>
-                    </motion.div>
+                    </div>
 
                     {/* Text block */}
                     <div className="max-w-3xl mx-auto text-center mb-16">
@@ -144,7 +144,7 @@ loading="lazy"
                     </div>
 
                     {/* Image Grid */}
-                    <motion.div
+                    <div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
@@ -172,7 +172,7 @@ loading="lazy"
                                 </div>
                             ))}
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </section>
 

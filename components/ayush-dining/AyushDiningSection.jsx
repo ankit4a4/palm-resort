@@ -10,12 +10,12 @@ import Image from "next/image";
 
 export default function AyushDiningSection() {
   return (
-    <section className="relative min-h-screen flex py-16 items-center justify-center bg-yellow-50/50 overflow-hidden">
+    <section className="relative min-h-screen flex py-16 items-center justify-center bg-[#fdfaf6] overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         {/* Hero Section with Side Layout */}
         <div className="flex justify-center items-center text-center">
           {/* Left Side - Main Content */}
-          <motion.div
+          <div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
@@ -71,25 +71,24 @@ export default function AyushDiningSection() {
             </div>
 
             {/* CTA Button */}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-12 py-5 bg-gradient-to-r from-yellow-600 to-yellow-700/90 text-[#f3e9cb] rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 font-semibold text-lg tracking-wide"
+
+            <button
+              className="bg-[#AA7021] text-[#f3e9cb] mt-5 font-semibold px-12 py-5 rounded-lg hover:bg-[#8c5d18] transition shadow-md"
             >
               Experience Ayush Bhoj (Dinning)
-            </motion.button>
-          </motion.div>
+            </button>
+          </div>
         </div>
 
         {/* Bottom Section - Philosophy */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
           className="mt-20 text-center"
-        ></motion.div>
+        ></div>
 
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
@@ -113,16 +112,16 @@ export default function AyushDiningSection() {
 
 
 
-            <motion.div
+            <div
               whileHover={{ scale: 1.02 }}
               className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
                   <Image
-loading="lazy" 
-height={100}
-                width={100}
+                    loading="lazy"
+                    height={100}
+                    width={100}
                     src="/Images/ayush-dining/11.png"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -139,10 +138,10 @@ height={100}
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Second Card - Content on Left, Image on Right */}
-            <motion.div
+            <div
               whileHover={{ scale: 1.02 }}
               className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
@@ -159,21 +158,21 @@ height={100}
                 </div>
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
                   <Image
-loading="lazy" 
-height={100}
-                width={100}
+                    loading="lazy"
+                    height={100}
+                    width={100}
                     src="https://images.pexels.com/photos/5182119/pexels-photo-5182119.jpeg"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
                   />
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Flavors & Harmony Section */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
@@ -181,16 +180,16 @@ height={100}
         >
           <div className="space-y-16">
             {/* First Card - Image on Left, Content on Right */}
-            <motion.div
+            <div
               whileHover={{ y: -5 }}
               className="bg-gradient-to-br from[#f3e9cb]/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
                   <Image
-loading="lazy" 
-height={100}
-                width={100}
+                    loading="lazy"
+                    height={100}
+                    width={100}
                     src="https://images.pexels.com/photos/6694164/pexels-photo-6694164.jpeg"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -207,10 +206,10 @@ height={100}
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Second Card - Content on Left, Image on Right */}
-            <motion.div
+            <div
               whileHover={{ y: -5 }}
               className="bg-gradient-to-br from[#f3e9cb]/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
@@ -227,28 +226,28 @@ height={100}
                 </div>
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
                   <Image
-loading="lazy" 
-height={100}
-                width={100}
+                    loading="lazy"
+                    height={100}
+                    width={100}
                     src="/Images/gallery/13.webp"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
                   />
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Third Card - Image on Left, Content on Right */}
-            <motion.div
+            <div
               whileHover={{ y: -5 }}
               className="bg-gradient-to-br from[#f3e9cb]/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
                   <Image
-loading="lazy" 
-height={100}
-                width={100}
+                    loading="lazy"
+                    height={100}
+                    width={100}
                     src="https://cdn.pixabay.com/photo/2021/06/28/14/06/rice-6371739_1280.jpg"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -265,12 +264,12 @@ height={100}
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Final Wellness Section */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
@@ -278,16 +277,16 @@ height={100}
         >
           <div className="space-y-16">
             {/* First Card - Image on Left, Content on Right */}
-            <motion.div
+            <div
               whileHover={{ scale: 1.02 }}
               className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-3xl shadow-xl border border[#f3e9cb]/70 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
                   <Image
-loading="lazy" 
-height={100}
-                width={100}
+                    loading="lazy"
+                    height={100}
+                    width={100}
                     src="/Images/ayush-dining/11.png"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
@@ -303,10 +302,10 @@ height={100}
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Second Card - Content on Left, Image on Right */}
-            <motion.div
+            <div
               whileHover={{ scale: 1.02 }}
               className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-3xl shadow-xl border border[#f3e9cb]/70 overflow-hidden"
             >
@@ -322,18 +321,18 @@ height={100}
                 </div>
                 <div className="p-5 flex items-center justify-center bg-gradient-to-br from-yellow-50/50 to-yellow-100/30">
                   <Image
-loading="lazy" 
-height={100}
-                width={100}
+                    loading="lazy"
+                    height={100}
+                    width={100}
                     src="https://cdn.pixabay.com/photo/2022/02/25/22/59/pestle-7034940_1280.jpg"
                     className="h-[14rem] w-full object-cover"
                     alt="a"
                   />
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

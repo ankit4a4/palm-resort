@@ -25,7 +25,7 @@ const Amenities = () => {
         <>
             <section className="py-20 bg-[#fbf7f0]">
                 <div className="container mx-auto px-4">
-                    <motion.div
+                    <div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -37,11 +37,11 @@ const Amenities = () => {
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Enhance your pool experience with our luxury amenities and services
                         </p>
-                    </motion.div>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {amenities.map((amenity, index) => (
-                            <motion.div
+                            <div
                                 key={index}
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ loading="lazy"
                                         </p>
                                     </CardContent>
                                 </Card>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>

@@ -28,7 +28,7 @@ const AboutSection = () => {
 
         {/* Main Heading */}
         {/* Uncomment if needed, updated colors for modern feel
-        <motion.h2
+        <h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -38,11 +38,11 @@ const AboutSection = () => {
           <span className="text-black block mt-1">
             Ayurveda, Nature & Wellness In Harmony
           </span>
-        </motion.h2>
+        </h2>
         */}
 
         {/* Intro Paragraph */}
-        <motion.p
+        <p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
@@ -56,13 +56,13 @@ const AboutSection = () => {
           luxury breathes through simplicity and every detail — from mud
           cottages to healing rituals — is woven with love, nature and ancient
           wisdom.
-        </motion.p>
+        </p>
 
         <h1 className="text-xl text-yellow-700/90   italic font-medium md:text-2xl  tracking-normal  flex items-center justify-center gap-2">
           <GiLotus className="text-yellow-700 " size={26} /> <span className=" md:text-3xl">A </span>  <span><span className=" md:text-3xl">J</span  >ourney <span className=" md:text-3xl">I</span>nto <span className=" md:text-3xl">T</span>ranquility</span>
         </h1>
 
-        <motion.p
+        <p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
@@ -73,7 +73,7 @@ const AboutSection = () => {
           silence. Surrender to the rhythm of Abhyanga, Shirodhara and warm
           herbal oils. Dine on pure, Natural food that nourishes from within —
           grown with care, served with love.
-        </motion.p>
+        </p>
 
         <h1 className="text-xl md:text-2xl  text-yellow-700/90  italic font-medium tracking-normal  flex items-center justify-center gap-2">
           <WiDaySunny className="text-yellow-700" size={26} />
@@ -83,7 +83,7 @@ const AboutSection = () => {
 
         </h1>
 
-        <motion.p
+        <p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
@@ -93,7 +93,7 @@ const AboutSection = () => {
           your natural self. Let the mud walls embrace you in comfort, Let the
           winds whisper peace through every breath. Here every sunset is a
           reminder to rest And every dawn a promise of renewal.
-        </motion.p>
+        </p>
 
         <h1 className="text-xl md:text-2xl  text-yellow-700/90  italic font-medium tracking-normal flex items-center justify-center gap-2">
           <PiDiamondsFourFill className="text-yellow-700" size={26} />
@@ -102,7 +102,7 @@ const AboutSection = () => {
           </span>
         </h1>
 
-        <motion.p
+        <p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
@@ -117,7 +117,7 @@ const AboutSection = () => {
             <li className="font-alegreya italic text-xl font-light">They are memories waiting to be lived,</li>
             <li className="font-alegreya italic text-xl font-light">Stories written in soil, soul and serenity.</li>
           </ul>
-        </motion.p>
+        </p>
 
       </div>
     </section>

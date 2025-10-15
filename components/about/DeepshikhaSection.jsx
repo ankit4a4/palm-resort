@@ -23,40 +23,40 @@ const DeepshikhaSection = () => {
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-center">
 
                 {/* LEFT IMAGE - 40% */}
-                <div className="md:w-[40%] w-full">
+                <div className="md:w-[25%] w-full">
                     <img
                         src={img1.src}
                         alt="Dr. Deepshikha Garg"
-                        className="w-full h-[500px] object-cover object-top rounded-2xl shadow-2xl border-[6px] border-[#a17633]/40"
+                        className="w-full h-[500px] md:h-[500px] object-cover object-top rounded-2xl shadow-2xl border-[6px] border-[#a17633]/40"
                     />
                 </div>
 
                 {/* RIGHT CONTENT - 60% */}
-                <div className="md:w-[60%] w-full">
+                <div className="md:w-[75%] w-full">
                     <h2 className="text-4xl md:text-5xl font-alegreya italic font-bold mb-5 text-[#a17633]">
                         Dr. Deepshikha Garg
                     </h2>
 
                     <div className="space-y-4 text-gray-800 text-lg leading-relaxed">
                         <p>
-                            Dt. Deepshikha Garg is a <span className="font-semibold text-[#a17633]">Gold Medalist Clinical, Celebrity, and Army Dietitian</span>
+                            Dt. Deepshikha Garg is a <span className="font-semibold text-[#a17633]">Gold Medalist Clinical, Celebrity, and Army Dietitian </span>
                             with over <span className="font-semibold">23 years of distinguished experience</span> in nutrition, wellness, and preventive health.
                             She served with excellence as an Army Dietitian at the <span className="italic">Military Hospital</span> and the
                             <span className="italic"> Indian Military Academy, Dehradun</span>, contributing to the health and performance of India’s finest officers.
                         </p>
 
                         <p>
-                            She is an <span className="font-semibold">Indian Dietetic Association (IDA)–approved dietitian</span>, and the
+                            She is an <span className="font-semibold">Indian Dietetic Association (IDA)–approved dietitian </span>, and the
                             <span className="font-semibold"> Founder & Chief Clinical Dietitian</span> of
-                            <span className="italic"> Dr. Diet Therapy Nutrition and Wellness Clinic</span>, Dehradun.
+                            <span className="italic"> Dr. Diet Therapy Nutrition and Wellness Clinic </span>, Dehradun.
                             Her clinic is a recognized name in the field of <span className="font-semibold">holistic nutrition and therapeutic wellness</span>.
                         </p>
 
                         <p>
                             Throughout her illustrious career, Dt. Garg has been
-                            <span className="font-semibold text-[#a17633]"> honoured with multiple national awards</span>
-                            for excellence in clinical dietetics and community health promotion.
-                            Her work has received <span className="italic">extensive media recognition</span> for transforming lives
+                            <span className="font-semibold text-[#a17633]"> honoured with multiple national awards </span>
+                            for excellence in clinical dietetics and community health pro
+                            Her work has received <span className="italic">extensive media recognition </span> for transforming lives
                             through evidence-based nutrition, personalized counseling, and sustainable lifestyle practices.
                         </p>
 
@@ -69,12 +69,14 @@ const DeepshikhaSection = () => {
                     </div>
 
                     {/* BUTTON TO OPEN GALLERY */}
+
                     <button
                         onClick={() => setIsOpen(true)}
-                        className="mt-6 bg-[#a17633] text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-[#8b5e24] transition-all duration-300"
+                        className="bg-[#AA7021] text-[#f3e9cb] mt-5 font-semibold px-6 py-3 rounded-full hover:bg-[#8c5d18] transition shadow-md"
                     >
-                        View Gallery
+                        View   Dr. Deepshikha Garg Pics
                     </button>
+
                 </div>
             </div>
 
