@@ -214,9 +214,7 @@ const ContactForm = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            
           >
             <Card className="bg-[#fbf7f0] border-gray-200 shadow-lg">
               <CardContent className="p-8">
@@ -331,9 +329,7 @@ const ContactForm = () => {
 
           {/* Contact Info */}
           <div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+           
             className="space-y-8"
           >
             <div>
@@ -349,9 +345,7 @@ const ContactForm = () => {
               {contactInfo.map((info, index) => (
                 <div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                
                 >
                   <Card className="h-full bg-gray-50 border-gray-200">
                     <CardContent className="p-6">

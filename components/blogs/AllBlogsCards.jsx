@@ -183,7 +183,6 @@ const AllBlogsCards = () => {
         {blogs.map((blog) => (
           <div
             key={blog.id}
-            whileHover={{ scale: 1.05 }}
             className="bg-[#fbf7f0] rounded-2xl shadow-md overflow-hidden flex flex-col"
           >
             {/* Blog Image */}

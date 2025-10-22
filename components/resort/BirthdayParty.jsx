@@ -104,10 +104,7 @@ const BirthdayParty = () => {
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
                     <div
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
+                     
                         className="text-center mb-14"
                     >
                         <h2 className="text-4xl md:text-5xl pb-4 font-serif font-extrabold text-[#A17633] italic font-playfai">
@@ -119,10 +116,7 @@ const BirthdayParty = () => {
                     <div className="flex flex-col lg:flex-row gap-10 items-start">
                         {/* Left Big Image */}
                         <div
-                            initial={{ opacity: 0, x: -60 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.7 }}
-                            viewport={{ once: true }}
+                       
                             className="lg:w-2/3"
                         >
                             <Image
@@ -137,10 +131,7 @@ loading="lazy"
 
                         {/* Right Collage */}
                         <div
-                            initial={{ opacity: 0, x: 60 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.7 }}
-                            viewport={{ once: true }}
+                         
                             className="lg:w-1/3 grid grid-cols-2 gap-4"
                         >
                             {birthdayPhotos.map((photo) => (

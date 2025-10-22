@@ -16,9 +16,7 @@ export default function AyushDiningSection() {
         <div className="flex justify-center items-center text-center">
           {/* Left Side - Main Content */}
           <div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+          
             className="space-y-12"
           >
             {/* Main Heading */}
@@ -82,16 +80,12 @@ export default function AyushDiningSection() {
 
         {/* Bottom Section - Philosophy */}
         <div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
+         
           className="mt-20 text-center"
         ></div>
 
         <div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
+        
           className="mt-24"
         >
           <div className="text-center mb-16">
@@ -113,7 +107,6 @@ export default function AyushDiningSection() {
 
 
             <div
-              whileHover={{ scale: 1.02 }}
               className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
@@ -142,7 +135,6 @@ export default function AyushDiningSection() {
 
             {/* Second Card - Content on Left, Image on Right */}
             <div
-              whileHover={{ scale: 1.02 }}
               className="bg-[#fbf7f0]/70 backdrop-blur-sm rounded-3xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
@@ -173,15 +165,12 @@ export default function AyushDiningSection() {
 
         {/* Flavors & Harmony Section */}
         <div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
+          
           className="mt-20"
         >
           <div className="space-y-16">
             {/* First Card - Image on Left, Content on Right */}
             <div
-              whileHover={{ y: -5 }}
               className="bg-gradient-to-br from[#f3e9cb]/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
@@ -210,7 +199,6 @@ export default function AyushDiningSection() {
 
             {/* Second Card - Content on Left, Image on Right */}
             <div
-              whileHover={{ y: -5 }}
               className="bg-gradient-to-br from[#f3e9cb]/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
@@ -239,7 +227,6 @@ export default function AyushDiningSection() {
 
             {/* Third Card - Image on Left, Content on Right */}
             <div
-              whileHover={{ y: -5 }}
               className="bg-gradient-to-br from[#f3e9cb]/80 to-yellow-50/80 backdrop-blur-sm rounded-2xl shadow-lg border border[#f3e9cb]/50 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
@@ -270,15 +257,12 @@ export default function AyushDiningSection() {
 
         {/* Final Wellness Section */}
         <div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.2 }}
+          
           className="mt-20 mb-16"
         >
           <div className="space-y-16">
             {/* First Card - Image on Left, Content on Right */}
             <div
-              whileHover={{ scale: 1.02 }}
               className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-3xl shadow-xl border border[#f3e9cb]/70 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">
@@ -306,7 +290,6 @@ export default function AyushDiningSection() {
 
             {/* Second Card - Content on Left, Image on Right */}
             <div
-              whileHover={{ scale: 1.02 }}
               className="bg-[#fbf7f0]/60 backdrop-blur-sm rounded-3xl shadow-xl border border[#f3e9cb]/70 overflow-hidden"
             >
               <div className="grid md:grid-cols-2 items-center">

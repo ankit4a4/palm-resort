@@ -49,9 +49,7 @@ const RoomFeature = () => {
     <section className="py-12 md:py-20 bg-[#a17633]">
       <div className="max-w-7xl mx-auto px-6">
         <div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+     
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl  font-bold font-alegreya  italic text-[#f3e9cb] mb-4">
@@ -66,9 +64,7 @@ const RoomFeature = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
+            
               className="bg-[#fbf7f0] rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl hover:scale-[1.03] transition duration-300"
             >
               <div className="flex items-center justify-center w-14 h-14 mx-auto mb-4 bg-[#a17633]/10 rounded-full">

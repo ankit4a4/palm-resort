@@ -34,7 +34,7 @@ const rooms = [
     title: "Mud Houses",
     description:
       "Experience rustic charm in our traditional mud house, featuring a separate living area and ample space.",
-    price: "₹6,999",
+    price: "₹5,500",
     capacity: "2 Adults",
     amenities: ["Living Room", "Garden View", "Dining Area"],
     images: [mud2, mud1, mud3, mud4, mud5, mud6, mud7],
@@ -45,7 +45,7 @@ const rooms = [
     title: "Swiss Cottages",
     description:
       "Relax in our luxurious Swiss cottages, where you'll find a comfortable bed, exclusive experiences and all modern amenities.",
-    price: "₹5,999",
+    price: "₹5,500",
     capacity: "2 Adults",
     amenities: ["Yoga Mat", "Meditation Corner", "Tv", "Sound System"],
     images: [swiss1, swiss2],
@@ -90,10 +90,7 @@ const RoomsGrid = () => {
           {rooms.map((room, index) => (
             <div
               key={room.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
+           
               className="group"
             >
               <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-2xl rounded-xl overflow-hidden transition-all duration-300 flex flex-col">

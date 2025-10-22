@@ -94,9 +94,7 @@ export default function Testimonials() {
     <section className="py-10 md:py-[10vh] bg-[#fbf7f0]">
       <div className="w-[90vw] max-w-[120vw] mx-auto px-[2vw]">
         <div
-          initial={{ opacity: 0, y: 5 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+      
           className="text-center mb-[6vh]"
         >
           <h2 className="text-[6vw] italic md:text-[3vw] font-playfair font-bold text-yellow-700/90 mb-[1.5vh]">
@@ -112,9 +110,7 @@ export default function Testimonials() {
           {testimonials.map((t, index) => (
             <div
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
+            
               className="px-[2vw] h-full"
             >
               <div className="bg-[#fbf7f0] rounded-[2vw] p-[4vw] md:p-[2vw] shadow-lg h-[450px] md:h-[350px] flex flex-col">

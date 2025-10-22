@@ -18,10 +18,7 @@ const PhotographySection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+
           className="text-center mb-14"
         >
           <h2 className="text-4xl md:text-5xl pb-4 font-serif font-extrabold text-[#A17633] italic font-playfai">
@@ -33,10 +30,7 @@ const PhotographySection = () => {
         <div className="flex flex-col lg:flex-row gap-14 items-start">
           {/* Left: Image Grid */}
           <div
-            initial={{ opacity: 0, y: -60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
+
             className="lg:w-1/2"
           >
             {/* Mobile: 2 cols, Desktop: 3 cols */}
@@ -44,16 +38,15 @@ const PhotographySection = () => {
               {photos.map((photo) => (
                 <div
                   key={photo.id}
-                  whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 200, damping: 15 }}
                   className="rounded-xl overflow-hidden shadow-lg group relative"
                 >
                   <Image
-loading="lazy" 
-    src={photo.src}
+                    loading="lazy"
+                    src={photo.src}
                     alt={photo.alt}
-                    width={500}       // Fixed width
-                    height={500}      // Fixed height
+                    width={500}      
+                    height={500}     
                     className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-end justify-center p-3">
@@ -68,10 +61,7 @@ loading="lazy"
 
           {/* Right: Text Content */}
           <div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
+
             className="lg:w-1/2 text-center lg:text-left"
           >
             <h3 className="text-3xl md:text-4xl italic font-playfai font-bold text-[#A17633] mb-6 leading-snug">
@@ -96,7 +86,6 @@ loading="lazy"
               ].map((item, i) => (
                 <div
                   key={i}
-                  whileHover={{ y: -4 }}
                   className="bg-amber-100 rounded-full py-2 px-5 text-amber-800 flex items-center shadow-sm"
                 >
                   <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>

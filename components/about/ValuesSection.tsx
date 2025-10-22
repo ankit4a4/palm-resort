@@ -45,9 +45,7 @@ const ValuesSection = () => (
   <section className="relative py-24 bg-[#a17633] border-b-2 border[#f3e9cb]">
     <div className="container mx-auto px-4 max-w-6xl">
       <div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
+       
         className="text-center mb-20"
       >
         <h2 className="text-4xl md:text-5xl font-alegreya italic font-bold text-[#f3e9cb] mb-4">
@@ -62,9 +60,7 @@ const ValuesSection = () => (
         {values.map((value, index) => (
           <div
             key={index}
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: index * 0.15 }}
+          
             className={`relative z-10 ${index % 2 === 0 ? "md:pl-32 md:pr-4" : "md:pr-32 md:pl-4"
               }`}
           >

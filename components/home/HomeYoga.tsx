@@ -31,17 +31,13 @@ const YogaHomeSection = () => {
             {/* Heading */}
             <div className="text-center space-y-6 mb-[10vh]">
                 <h2
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                
                     className="text-[6vw] md:text-[2.8vw] font-playfair font-bold text-[#f3e9cb]"
                 >
                     Discover <span className="text-[#f3e9cb]">Our Yoga Offerings</span>
                 </h2>
                 <p
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.1 }}
+                
                     className="text-[2.4vh] md:text-[1.15vw] text-[#f3e9cb] mx-auto leading-relaxed"
                 >
                     Explore our carefully curated yoga experiences crafted for healing, energy and inner transformation.
@@ -55,9 +51,7 @@ const YogaHomeSection = () => {
                 {yogaData.map((item, index) => (
                     <div
                         key={index}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: index * 0.1 }}
+                      
                         className={`flex flex-col md:flex-row ${index % 2 === 1 ? 'md:flex-row-reverse' : ''
                             } bg-[#fbf7f0] rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_35px_rgba(0,0,0,0.1)] transition duration-300 overflow-hidden p-5`}
                     >
@@ -86,9 +80,7 @@ loading="lazy"
 
             {/* CTA Button */}
             <div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+
                 className="text-center md:mt-[10vh] mt-10"
             >
                 <Button

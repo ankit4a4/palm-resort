@@ -167,7 +167,7 @@ const RotatingText = forwardRef((props, ref) => {
       transition={transition}
     >
       <span className="text-rotate-sr-only">{texts[currentTextIndex]}</span>
-      <AnimatePresence mode={animatePresenceMode} initial={animatePresenceInitial}>
+      <AnimatePresence mode={animatePresenceMode}>
         <div
           key={currentTextIndex}
           className={cn(
@@ -188,19 +188,7 @@ const RotatingText = forwardRef((props, ref) => {
                 {wordObj.characters.map((char, charIndex) => (
                   <span
                     key={charIndex}
-                    initial={initial}
-                    animate={animate}
-                    exit={exit}
-                    transition={{
-                      ...transition,
-                      delay: getStaggerDelay(
-                        previousCharsCount + charIndex,
-                        array.reduce(
-                          (sum, word) => sum + word.characters.length,
-                          0
-                        )
-                      ),
-                    }}
+               
                     className={cn("text-rotate-element", elementLevelClassName)}
                   >
                     {char}

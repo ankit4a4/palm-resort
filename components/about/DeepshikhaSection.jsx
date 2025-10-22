@@ -74,7 +74,7 @@ const DeepshikhaSection = () => {
                         onClick={() => setIsOpen(true)}
                         className="bg-[#AA7021] text-[#f3e9cb] mt-5 font-semibold px-6 py-3 rounded-full hover:bg-[#8c5d18] transition shadow-md"
                     >
-                        View   Dr. Deepshikha Garg Pics
+                        View   Dr. Deepshikha Garg
                     </button>
 
                 </div>

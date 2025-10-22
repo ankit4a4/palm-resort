@@ -10,9 +10,7 @@ const HowToReach = () => {
     <section className="py-[8vh] bg-[#fdf9f4]">
       <div className="container mx-auto px-4">
         <div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+        
           className="text-center mb-[6vh]"
         >
           <h2 className="text-[6vw] md:text-[3vw] font-playfair font-semibold text-[#4B3F2F] mb-[2vh] leading-tight">
@@ -25,9 +23,7 @@ const HowToReach = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+         
           >
             <Tabs defaultValue="airplane" className="w-full">
               <TabsList className="grid w-full grid-cols-2 mb-8 px-2 sm:px-0">
@@ -129,9 +125,7 @@ const HowToReach = () => {
 
           {/* Google Map */}
           <div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+         
             className="h-[50vh] lg:h-[500px]"
           >
             <Card className="h-full bg-[#fffdf9] border border-[#eae4d7] shadow-md rounded-xl">
@@ -155,9 +149,7 @@ const HowToReach = () => {
 
         {/* Resort Address */}
         <div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+      
           className="mt-[8vh] text-center"
         >
           <div className="flex items-center justify-center gap-2 mb-4">

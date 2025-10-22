@@ -62,7 +62,7 @@ export default function MadamProfile() {
             onClick={() => setIsOpen(true)}
             className="bg-[#AA7021] text-[#f3e9cb] font-semibold px-6 py-3 rounded-full hover:bg-[#8c5d18] transition shadow-md"
           >
-            View  Dr. Urmilla N. Pandey Pics
+            View  Dr. Urmilla N. Pandey 
           </button>
         </div>
       </div>

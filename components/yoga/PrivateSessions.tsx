@@ -7,9 +7,7 @@ const PrivateSessions = () => {
         <section className="py-20 bg-black text-[#f3e9cb]">
             <div className="container mx-auto px-4">
                 <div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-4">
@@ -22,9 +20,7 @@ const PrivateSessions = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+
                     >
                         <h3 className="text-3xl font-playfair font-bold mb-6">
                             Personalized Yoga Experience
@@ -64,14 +60,12 @@ const PrivateSessions = () => {
                     </div>
 
                     <div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+
                         className="relative h-96 rounded-2xl overflow-hidden"
                     >
                         <Image
-loading="lazy" 
-            src="https://images.pexels.com/photos/3822695/pexels-photo-3822695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            loading="lazy"
+                            src="https://images.pexels.com/photos/3822695/pexels-photo-3822695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             fill
                             alt="Private Yoga Session"
                             className="object-cover"

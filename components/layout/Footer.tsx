@@ -22,9 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[4vw]">
           {/* Brand */}
           <div
-            initial={{ opacity: 0, y: 2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+        
             className="space-y-[2vh]"
           >
             <Link href="/" className="flex items-center space-x-[1vw]">
@@ -43,9 +41,7 @@ src={logo}
 
           {/* Quick Links */}
           <div
-            initial={{ opacity: 0, y: 2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+         
             className="space-y-[2vh]"
           >
             <h3 className="text-[4.5vw] md:text-[1.5vw] font-playfair font-semibold text-[#f3e9cb]">
@@ -78,9 +74,7 @@ src={logo}
 
           {/* Contact Info */}
           <div
-            initial={{ opacity: 0, y: 2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+        
             className="space-y-[2vh]"
           >
             <h3 className="text-[4.5vw] md:text-[1.5vw] font-playfair font-semibold text-[#f3e9cb]">
@@ -119,9 +113,7 @@ src={logo}
 
           {/* Social Media */}
           <div
-            initial={{ opacity: 0, y: 2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+         
             className="space-y-[2vh]"
           >
             <h3 className="text-[4.5vw] md:text-[1.5vw] font-playfair font-semibold text-[#f3e9cb]">
@@ -169,9 +161,7 @@ src={logo}
         </div>
         {/* Bottom Bar */}
         <div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
+       
           className="border-t border-gray-800 mt-[6vh] pt-[3vh] text-center"
         >
           <p className="text-[#f3e9cb] font-[600] text-[3.5vw] md:text-[1vw] pb-5 md:pb-[1vw]">

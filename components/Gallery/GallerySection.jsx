@@ -122,9 +122,7 @@ export default function GallerySection() {
     <section className="py-20 px-4 bg-[#f3e9cb]">
       <div className="max-w-7xl mx-auto">
         <h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+        
           className="text-4xl font-bold font-alegreya  italic text-center mb-16 text-yellow-700/90"
         >
           Our Gallery
@@ -137,15 +135,7 @@ export default function GallerySection() {
               <div
                 key={`${img.src}-${i}`}
                 layout
-                initial={{ opacity: 0, scale: 0.98 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{
-                  duration: 0.5,
-                  type: "spring",
-                  damping: 15,
-                  stiffness: 100,
-                }}
+               
                 className={`relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300`}
                 style={{
                   gridRowEnd: `span ${Math.round(getRowSpan(img.aspect))}`,
@@ -161,9 +151,7 @@ export default function GallerySection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                     <div
-                      initial={{ y: 20 }}
-                      animate={{ y: 0 }}
-                      transition={{ duration: 0.3 }}
+                    
                       className="text-[#f3e9cb]"
                     >
                       {/* Optional caption */}

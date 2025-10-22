@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import img from "../../public/Images/gallery/13.webp"
 
 const systems = [
   {
@@ -30,7 +31,7 @@ const systems = [
   {
     title: "Ayush Bhoj (Dinning)",
     image:
-      "/images/gallery/13.webp",
+      img.src,
     description:
       "Experience Sattvic bhoj that heals from within, served with love and mountain air",
   },
@@ -59,9 +60,7 @@ const AyushWellnessSection = () => {
 
         {/* What Awaits You Header */}
         {/* <div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+     
           className="text-center mb-12"
         >
           <h3 className="text-3xl md:text-4xl font-bold font-playfair text-yellow-700 mb-4">
@@ -74,9 +73,7 @@ const AyushWellnessSection = () => {
           {systems.map((item, index) => (
             <div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+           
               className="bg-[#fbf7f0] rounded-sm overflow-hidden hover:shadow-xl transition duration-300"
             >
               <div className="relative h-[450px] w-full">
@@ -106,9 +103,7 @@ loading="lazy"
 
         {/* Inspirational Quote Section */}
         {/* <div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
+        
           className="mt-16 rounded-sm py-10 border text-center bg-[#fbf7f0]"
         >
           <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-8 italic">
@@ -127,9 +122,7 @@ loading="lazy"
 
         {/* Closing CTA */}
         <div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
+       
           className="mt-10 text-center"
         >
           <Link

@@ -25,9 +25,7 @@ const Directions = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-alegreya  italic font-bold text-yellow-700/90 mb-4">
@@ -44,9 +42,7 @@ const Directions = () => {
             {directions.map((direction, index) => (
               <div
                 key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+              
               >
                 <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-8">
@@ -74,9 +70,7 @@ const Directions = () => {
 
           {/* Map */}
           <div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+        
             className="h-96 rounded-2xl overflow-hidden shadow-lg"
           >
             <iframe

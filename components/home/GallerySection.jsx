@@ -74,9 +74,7 @@ export default function GallerySection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header Section */}
         <div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+      
           className="text-center space-y-[5vh] mx-auto mb-12 italic"
         >
           <p className="text-3xl text-[#a17633]">शुभं निवासं अनुभवतु <br /> <span className="mt-6"> A Pure and Serene Stay </span></p>
@@ -94,24 +92,12 @@ export default function GallerySection() {
 
         {/* Gallery Grid - Updated for mobile responsiveness */}
         <div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
+       
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3 md:gap-4 auto-rows-[200px] sm:auto-rows-[220px] md:auto-rows-[250px]"
         >
           {galleryImages.map((image, index) => (
             <div
               key={image.id}
-              initial={{ opacity: 0, scale: 1 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.01,
-                ease: "easeOut",
-              }}
-              whileHover={{
-                transition: { duration: 0.3 },
-              }}
               className={`${image.gridClass} relative overflow-hidden transition-all duration-300 cursor-pointer group `}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
@@ -130,9 +116,7 @@ src={image.src}
 
         {/* View More Button */}
         <div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+      
           className="text-center mt-16"
         >
           <Link 

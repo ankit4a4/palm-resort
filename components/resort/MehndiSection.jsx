@@ -123,10 +123,7 @@ loading="lazy"
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
                     <div
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
+                   
                         className="text-center mb-14"
                     >
                         <h2 className="text-4xl md:text-5xl pb-4 font-serif font-extrabold text-[#A17633] italic font-playfai">
@@ -155,7 +152,6 @@ loading="lazy"
                             ].map((item, i) => (
                                 <div
                                     key={i}
-                                    whileHover={{ y: -4 }}
                                     className="bg-amber-100 rounded-full py-2 px-5 text-amber-800 flex items-center shadow-sm"
                                 >
                                     <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
@@ -167,9 +163,7 @@ loading="lazy"
 
                     {/* Full width image grid */}
                     <div
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.7 }}
+                    
                         viewport={{ once: true }}
                     >
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">

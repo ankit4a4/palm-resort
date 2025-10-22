@@ -46,9 +46,7 @@ const FacilitiesSection = () => {
     <section className="py-20 bg-[#fbf7f0]">
       <div className="container mx-auto px-4">
         <div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+       
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-black mb-4">
@@ -63,10 +61,7 @@ const FacilitiesSection = () => {
           {facilities.map((facility, index) => (
             <div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
+          
               className="group"
             >
               <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-2xl transition-all duration-300 overflow-hidden">
@@ -113,9 +108,7 @@ const FacilitiesSection = () => {
 
         {/* Stats Section */}
         <div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+       
           className="mt-20 bg-black rounded-2xl p-8 md:p-12"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">

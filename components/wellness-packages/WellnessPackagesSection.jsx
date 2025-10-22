@@ -15,7 +15,7 @@ const packages = [
         image:
             "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1470&q=80",
         duration: "7 Days",
-        price: "₹24,999",
+        price: "₹42,000",
         highlight: "Most Popular",
     },
     {
@@ -26,7 +26,7 @@ const packages = [
         image:
             "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1587&q=80",
         duration: "3 Days",
-        price: "₹15,999",
+        price: "₹17,999",
     },
     {
         id: 6,
@@ -36,7 +36,7 @@ const packages = [
         image:
             "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=1470&q=80",
         duration: "21 Days",
-        price: "₹40,999",
+        price: "₹129,990",
         highlight: "Comprehensive",
     },
 

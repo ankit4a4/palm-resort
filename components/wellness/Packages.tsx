@@ -8,12 +8,7 @@ const Packages = () => {
     <>
       <section className="py-20 bg-black text-[#f3e9cb]">
         <div className="container mx-auto px-4">
-          <div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
+            
             <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-4">
               Wellness <span className="text-royal-gold">Packages</span>
             </h2>
@@ -46,9 +41,7 @@ const Packages = () => {
               .map((package_item, index) => (
                 <div
                   key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                
                   className="group"
                 >
                   <Card className="h-full bg-gray-900 border-gray-800 hover:shadow-2xl transition-all duration-300">
@@ -78,7 +71,6 @@ const Packages = () => {
                 </div>
               ))}
           </div>
-        </div>
       </section>
     </>
   )

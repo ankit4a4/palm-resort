@@ -26,9 +26,7 @@ const Facilities = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+        
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-black mb-4">
@@ -43,9 +41,7 @@ const Facilities = () => {
             {facilities.map((facility, index) => (
               <div
                 key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+            
                 className="group"
               >
                 <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-lg transition-all duration-300 overflow-hidden">

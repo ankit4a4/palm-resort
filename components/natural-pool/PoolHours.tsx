@@ -7,9 +7,7 @@ const PoolHours = () => {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                     
                     >
                         <h2 className="text-4xl font-playfair font-bold mb-6">
                             Pool Hours & <span className="text-royal-gold">Information</span>
@@ -58,9 +56,7 @@ const PoolHours = () => {
                     </div>
 
                     <div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                   
                         className="text-center"
                     >
                         <div className="bg-gray-900 p-8 rounded-2xl">

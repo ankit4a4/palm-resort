@@ -49,10 +49,6 @@ export default function AyushStore() {
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="relative z-10 max-w-3xl px-4"
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             Ayush Store – Nature’s Pure Essence
@@ -80,7 +76,7 @@ export default function AyushStore() {
           {products.map((item, index) => (
             <div
               key={index}
-              whileHover={{ scale: 1.05 }}
+            
               className="bg-[#f3e9cb]/90 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition"
             >
               <Image

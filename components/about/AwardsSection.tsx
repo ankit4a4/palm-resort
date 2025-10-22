@@ -25,9 +25,7 @@ const AwardsSection = () => (
   <section className="py-24 bg-[#F8F3E7] text-gray-800">
     <div className="container mx-auto px-4 max-w-6xl">
       <div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        
         className="text-center mb-16"
       >
         <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-4">
@@ -42,9 +40,7 @@ const AwardsSection = () => (
         {awards.map((award, index) => (
           <div
             key={index}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: index * 0.2 }}
+           
             className="text-center bg-[#fbf7f0] shadow-lg rounded-xl p-6 hover:shadow-xl transition"
           >
             <div className="bg-[#a17633] w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">

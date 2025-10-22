@@ -17,9 +17,7 @@ export default function AyushWellnessProgramSection() {
 
         {/* Header Section */}
         <div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+       
           className="text-center mb-12"
         >
           <p className="text-3xl pb-10 text-[#a17633] text-center font-playfair italic">आरोग्यवर्धकं हरितभोजनम् <br /> <span className="mt-6 ">Green food in Enhances Wellness</span></p>
@@ -33,9 +31,7 @@ export default function AyushWellnessProgramSection() {
 
         {/* Main Content */}
         <div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+        
           className="space-y-12"
         >
 
@@ -53,9 +49,7 @@ export default function AyushWellnessProgramSection() {
 
           {/* What Awaits You Section */}
           <div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+       
           >
             <h3 className="text-yellow-600 font-alegreya  italic text-3xl lg:text-4xl font-semibold text-center mb-10">
               What Awaits You:
@@ -65,9 +59,7 @@ export default function AyushWellnessProgramSection() {
 
               {/* Feature Item 1 */}
               <div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
+             
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex md:flex-row flex-col items-start gap-4">
@@ -103,9 +95,7 @@ export default function AyushWellnessProgramSection() {
 
               {/* Feature Item 2 */}
               <div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
+            
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="md:flex items-start gap-4">
@@ -139,9 +129,6 @@ export default function AyushWellnessProgramSection() {
 
               {/* Feature Item 3 */}
               <div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.7 }}
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
@@ -170,9 +157,7 @@ export default function AyushWellnessProgramSection() {
 
               {/* Feature Item 4 */}
               <div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
+             
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
@@ -201,9 +186,7 @@ export default function AyushWellnessProgramSection() {
 
               {/* Feature Item 5 */}
               <div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.9 }}
+              
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
@@ -232,9 +215,7 @@ export default function AyushWellnessProgramSection() {
 
               {/* Feature Item 6 */}
               <div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 1.0 }}
+              
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
@@ -265,9 +246,7 @@ export default function AyushWellnessProgramSection() {
 
           {/* Inspirational Quote */}
           <div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
+          
             className="bg-[#fbf7f0]/80 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-lg border border[#f3e9cb]/60 text-center"
           >
             <p className="text-black text-lg lg:text-xl leading-relaxed font-alegreya italic mb-8">
@@ -286,9 +265,7 @@ export default function AyushWellnessProgramSection() {
 
           {/* Call to Action */}
           <div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
+          
             className="text-center"
           >
             <button className="px-10 py-4 bg-yellow-700/90 text-[#f3e9cb] rounded-2xl hover:bg-yellow-700 transition-all duration-300 hover:scale-105 hover:shadow-xl font-semibold text-lg">
