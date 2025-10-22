@@ -132,13 +132,19 @@ export default function WellnessPackagesSection() {
                                         <span className="text-lg font-bold text-[#8B5A2B] group-hover:text-[#A67A35] transition-colors duration-300">
                                             {price}
                                         </span>
-                                        <button
-                                            onClick={() => setId(id)}
+                                        {/* <button
+
                                             className="px-4 py-2 bg-[#A67A35] hover:bg-[#8B5A2B] text-[#f3e9cb] text-sm font-medium rounded-lg 
                                             transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-[#A67A35]/30">
                                             Book Now
                                             <span className="ml-2 inline-block group-hover:translate-x-1 transition-transform duration-300">→</span>
-                                        </button>
+                                        </button> */}
+
+                                        <button
+                                            onClick={() => setId(id)}
+                                            className="px-4 py-2 bg-[#A67A35] hover:bg-[#8B5A2B] text-[#f3e9cb] text-sm font-medium rounded-lg 
+                                             "
+                                        >Book Now   <span className="ml-2 inline-block group-hover:translate-x-1 transition-transform duration-300">→</span></button>
                                     </div>
                                 </div>
                             </div>
