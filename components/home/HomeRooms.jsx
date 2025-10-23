@@ -36,7 +36,7 @@ const ALL_ROOMS = [
     title: "Mud Houses",
     description:
       "Experience rustic charm in our traditional mud house, featuring a separate living area and ample space.",
-    price: "₹6,999",
+    price: "₹5,500",
     capacity: "2 Adults",
     amenities: ["Living Room", "Garden View", "Dining Area"],
     images: [mud3, mud2, mud1, mud4, mud5, mud6, mud7],
@@ -55,7 +55,7 @@ const ALL_ROOMS = [
     title: "Swiss Cottages",
     description:
       "Relax in our luxurious Swiss cottages, where you'll find a comfortable bed, exclusive experiences and all modern amenities.",
-    price: "₹5,999",
+    price: "₹5,500",
     capacity: "2 Adults",
     amenities: ["Yoga Mat", "Meditation Corner", "Tv", "Sound System"],
     images: [swiss1, swiss2],
@@ -73,7 +73,7 @@ const ALL_ROOMS = [
     title: "Family Suite",
     description:
       "Perfect for families with connecting rooms and child-friendly amenities.",
-    price: "₹7,999",
+    price: "₹5,500",
     capacity: "2 Adults + 2 Children",
     amenities: [
       "Connecting Rooms",
@@ -104,7 +104,7 @@ const ALL_ROOMS = [
     title: "Luxury Room",
     description:
       "Finest comfort with breathtaking mountain views, modern interiors and exquisite service.",
-    price: "₹8,999",
+    price: "₹5,500",
     capacity: "2 Adults",
     amenities: ["Mountain View", "Balcony", "King Bed", "Sitting Area"],
     images: [luxury1, luxury2, luxury3, luxury4],
@@ -146,12 +146,9 @@ function RoomImageSlider({ images }) {
   return (
     <div className="relative w-full h-[32rem] bg-gray-100 rounded-xl overflow-hidden">
       <AnimatePresence mode="wait">
-        <motion.div
+        <div
           key={current}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+      
           className="absolute inset-0"
         >
           <Image
@@ -161,7 +158,7 @@ function RoomImageSlider({ images }) {
             style={{ objectFit: "cover" }}
             className="w-full h-full"
           />
-        </motion.div>
+        </div>
       </AnimatePresence>
       <button
         aria-label="Previous Image"
@@ -191,10 +188,8 @@ function RoomDetailModal({ room, open, onClose }) {
   if (!open || !room) return null;
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 md:px-2">
-      <motion.div
-        initial={{ scale: 0.94, opacity: 0, y: 100 }}
-        animate={{ scale: 1, opacity: 1, y: 0 }}
-        exit={{ scale: 0.94, opacity: 0, y: 100 }}
+      <div
+    
         className="bg-[#fbf7f0] shadow-2xl rounded-2xl w-full md:w-[80vw] lg:w-[60vw] max-w-4xl md:max-w-4xl p-0 overflow-hidden relative flex flex-col"
         style={{ maxHeight: "90vh" }}
       >
@@ -246,7 +241,7 @@ function RoomDetailModal({ room, open, onClose }) {
             </Button>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
@@ -264,10 +259,8 @@ function RoomDetailedModal({ room, open, onClose }) {
   return (
     <div className="fixed inset-0 z-50 bg-black/50 overflow-y-auto">
       <div className="min-h-screen flex items-start justify-center p-4">
-        <motion.div
-          initial={{ scale: 0.94, opacity: 0, y: 100 }}
-          animate={{ scale: 1, opacity: 1, y: 0 }}
-          exit={{ scale: 0.94, opacity: 0, y: 100 }}
+        <div
+        
           className="bg-[#fbf7f0] shadow-2xl rounded-2xl w-full md:w-[85vw] lg:w-[70vw] max-w-5xl relative my-8"
         >
           <button
@@ -378,7 +371,7 @@ function RoomDetailedModal({ room, open, onClose }) {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

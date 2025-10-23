@@ -5,6 +5,7 @@ import { FaLeaf, FaHeart, FaSun } from "react-icons/fa";
 import { GiMeditation, GiLotus, GiBowlOfRice } from "react-icons/gi";
 import { MdSpa, MdNaturePeople } from "react-icons/md";
 import img from "../../public/Images/PersonalWellnessImage.jpg"
+import img1 from "../../public/PersonalConsultations.jpg"
 import img2 from "../../public/Images/dailyYoga.jpg"
 import Image from "next/image";
 
@@ -15,10 +16,8 @@ export default function AyushWellnessProgramSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Header Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+        <div
+       
           className="text-center mb-12"
         >
           <p className="text-3xl pb-10 text-[#a17633] text-center font-playfair italic">आरोग्यवर्धकं हरितभोजनम् <br /> <span className="mt-6 ">Green food in Enhances Wellness</span></p>
@@ -28,13 +27,11 @@ export default function AyushWellnessProgramSection() {
           <h2 className="text-yellow-600 font-alegreya  italic text-2xl lg:text-3xl font-alegreya italic  mb-8">
             A Journey Into Balance, Born From The Roots Of Nature
           </h2>
-        </motion.div>
+        </div>
 
         {/* Main Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+        <div
+        
           className="space-y-12"
         >
 
@@ -51,10 +48,8 @@ export default function AyushWellnessProgramSection() {
           </div>
 
           {/* What Awaits You Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+          <div
+       
           >
             <h3 className="text-yellow-600 font-alegreya  italic text-3xl lg:text-4xl font-semibold text-center mb-10">
               What Awaits You:
@@ -63,18 +58,20 @@ export default function AyushWellnessProgramSection() {
             <div className="grid md:grid-cols-2 gap-6">
 
               {/* Feature Item 1 */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
+              <div
+             
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex md:flex-row flex-col items-start gap-4">
                   <div className="p-3 rounded-full md:w-[40%]">
                     <Image
-loading="lazy" 
-      height={100}
+                      loading="lazy"
+                      height={100}
                       width={100} src={img.src} className=" md:w-[100%] rounded-md" alt="Ayush Logo" />
+                    <Image
+                      loading="lazy"
+                      height={100}
+                      width={100} src={img1.src} className=" md:w-[100%] rounded-md" alt="Ayush Logo" />
                   </div>
                   <div className="md:w-[60%]">
                     <h4 className="text-yellow-600 font-alegreya  italic font-semibold text-lg mb-2">
@@ -94,13 +91,11 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 2 */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
+              <div
+            
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="md:flex items-start gap-4">
@@ -125,18 +120,15 @@ loading="lazy"
 
                   <div className="p-3  md:w-[40%]">
                     <Image
-loading="lazy" 
-      height={100}
+                      loading="lazy"
+                      height={100}
                       width={100} src={img2.src} className=" md:w-[100%] rounded-md" alt="" />
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 3 */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.7 }}
+              <div
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
@@ -161,13 +153,11 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 4 */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
+              <div
+             
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
@@ -192,13 +182,11 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 5 */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.9 }}
+              <div
+              
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
@@ -223,13 +211,11 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Feature Item 6 */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 1.0 }}
+              <div
+              
                 className="bg-[#fbf7f0]/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border border[#f3e9cb]/40"
               >
                 <div className="flex items-start gap-4">
@@ -254,15 +240,13 @@ loading="lazy"
                     </p> */}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Inspirational Quote */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
+          <div
+          
             className="bg-[#fbf7f0]/80 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-lg border border[#f3e9cb]/60 text-center"
           >
             <p className="text-black text-lg lg:text-xl leading-relaxed font-alegreya italic mb-8">
@@ -277,20 +261,18 @@ loading="lazy"
                 A time to breathe. A space to heal. A path to wholeness.
               </p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Call to Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
+          <div
+          
             className="text-center"
           >
             <button className="px-10 py-4 bg-yellow-700/90 text-[#f3e9cb] rounded-2xl hover:bg-yellow-700 transition-all duration-300 hover:scale-105 hover:shadow-xl font-semibold text-lg">
               Begin Your Ayush Journey
             </button>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   );

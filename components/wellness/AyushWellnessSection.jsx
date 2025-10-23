@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import img from "../../public/Images/gallery/13.webp"
 
 const systems = [
   {
@@ -30,7 +31,7 @@ const systems = [
   {
     title: "Ayush Bhoj (Dinning)",
     image:
-      "/images/gallery/13.webp",
+      img.src,
     description:
       "Experience Sattvic bhoj that heals from within, served with love and mountain air",
   },
@@ -58,25 +59,21 @@ const AyushWellnessSection = () => {
 
 
         {/* What Awaits You Header */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+        {/* <div
+     
           className="text-center mb-12"
         >
           <h3 className="text-3xl md:text-4xl font-bold font-playfair text-yellow-700 mb-4">
             🌼 What Awaits You:
           </h3>
-        </motion.div> */}
+        </div> */}
 
         {/* Wellness Systems Grid */}
         <div className="flex flex-col gap-12">
           {systems.map((item, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+           
               className="bg-[#fbf7f0] rounded-sm overflow-hidden hover:shadow-xl transition duration-300"
             >
               <div className="relative h-[450px] w-full">
@@ -100,15 +97,13 @@ loading="lazy"
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Inspirational Quote Section */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
+        {/* <div
+        
           className="mt-16 rounded-sm py-10 border text-center bg-[#fbf7f0]"
         >
           <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-8 italic">
@@ -123,13 +118,11 @@ loading="lazy"
               1 time to breathe. A space to heal. A path to wholeness.
             </p>
           </div>
-        </motion.div> */}
+        </div> */}
 
         {/* Closing CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
+        <div
+       
           className="mt-10 text-center"
         >
           <Link
@@ -139,7 +132,7 @@ loading="lazy"
             Begin Your Ayush Journey
             <ExternalLink />
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

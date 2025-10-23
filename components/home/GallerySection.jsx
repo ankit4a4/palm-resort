@@ -73,10 +73,8 @@ export default function GallerySection() {
     <section className="relative py-20 bg-gradient-to-br from-yellow-50/30 to[#f3e9cb]/50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+        <div
+      
           className="text-center space-y-[5vh] mx-auto mb-12 italic"
         >
           <p className="text-3xl text-[#a17633]">शुभं निवासं अनुभवतु <br /> <span className="mt-6"> A Pure and Serene Stay </span></p>
@@ -90,28 +88,16 @@ export default function GallerySection() {
             <p>they're sanctuaries for deep sleep</p>
             <p>holistic healing and spiritual calm.</p>
           </div>
-        </motion.div>
+        </div>
 
         {/* Gallery Grid - Updated for mobile responsiveness */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
+        <div
+       
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3 md:gap-4 auto-rows-[200px] sm:auto-rows-[220px] md:auto-rows-[250px]"
         >
           {galleryImages.map((image, index) => (
-            <motion.div
+            <div
               key={image.id}
-              initial={{ opacity: 0, scale: 1 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.01,
-                ease: "easeOut",
-              }}
-              whileHover={{
-                transition: { duration: 0.3 },
-              }}
               className={`${image.gridClass} relative overflow-hidden transition-all duration-300 cursor-pointer group `}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
@@ -124,15 +110,13 @@ src={image.src}
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
               />
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
         {/* View More Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+        <div
+      
           className="text-center mt-16"
         >
           <Link 
@@ -141,7 +125,7 @@ src={image.src}
           >
             View All Rooms
           </Link>
-        </motion.div>
+        </div>
       </div>
       <hr className="mt-2" />
     </section>

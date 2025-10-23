@@ -53,10 +53,8 @@ const ClassesSchedule = () => {
         <>
             <section className="py-20 bg-[#fbf7f0]">
                 <div className="container mx-auto px-4">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                    <div
+                      
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-playfair font-bold text-black mb-4">
@@ -65,16 +63,13 @@ const ClassesSchedule = () => {
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Join our expert instructors for transformative yoga experiences throughout the day
                         </p>
-                    </motion.div>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {classes.map((yogaClass, index) => (
-                            <motion.div
+                            <div
                                 key={index}
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, delay: index * 0.1 }}
-                                whileHover={{ y: -5 }}
+                             
                                 className="group"
                             >
                                 <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-2xl transition-all duration-300 overflow-hidden">
@@ -122,7 +117,7 @@ loading="lazy"
                                         </div>
                                     </CardContent>
                                 </Card>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>

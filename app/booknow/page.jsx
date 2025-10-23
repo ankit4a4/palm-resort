@@ -21,28 +21,28 @@ const BookNowPage = () => {
         {
             id: 0,
             title: "Mud Houses",
-            price: 6999,
+            price: 5500,
             capacity: "2 Adults",
             images: img1.src,
         },
         {
             id: 1,
             title: "Swiss Cottages",
-            price: 5999,
+            price: 5500,
             capacity: "2 Adults",
             images: img2.src,
         },
         {
             id: 2,
             title: "Family Suite",
-            price: 7999,
+            price: 5500,
             capacity: "2 Adults + 2 Children",
             images: img3.src,
         },
         {
             id: 3,
             title: "Luxury Room",
-            price: 8999,
+            price: 5500,
             capacity: "2 Adults",
             images: img4.src,
         },
@@ -52,7 +52,7 @@ const BookNowPage = () => {
             images:
                 "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1470&q=80",
             capacity: "7 Days",
-            price: 24999,
+            price: 42000,
         },
 
         {
@@ -61,14 +61,14 @@ const BookNowPage = () => {
             images:
                 "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1587&q=80",
             capacity: "3 Days",
-            price: 15999,
+            price: 17999,
         },
         {
             title: "Ayurvedic Weight Management",
             images:
                 "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=1470&q=80",
             capacity: "21 Days",
-            price: 40999,
+            price: 129990,
         },
     ];
 

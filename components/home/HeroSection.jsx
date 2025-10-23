@@ -58,8 +58,8 @@ const HeroSection = ({
         data-aos="fade-up"
         className="absolute md:pl-24 inset-0 z-10 flex flex-col items-start justify-center text-center px-4"
       >
-        <h1 className="text-[#f3e9cb] text-[6vh] md:text-4xl font-bold drop-shadow-lg">
-          <span className="text-6xl font-[900] font-tangerine">
+        <h1 className="text-[#f3e9cb] text-[6vh] md:text-4xl font-[400] drop-shadow-lg">
+          <span className="text-6xl mr-2 font-bold font-tangerine">
             {welcomeHeading.charAt(0)}
           </span>
           {welcomeHeading.slice(1)}
@@ -107,16 +107,15 @@ const HeroSection = ({
       {/* Enquiry Form */}
       <div
         data-aos="fade-up"
-        className={`z-10 w-full max-w-[94vw] mx-auto px-[2vh] md:px-[2vw] pb-[4vh] md:pb-[4vh] ${
-          showMobileForm ? "block" : "hidden"
-        } md:block`}
+        className={`z-10 w-full max-w-[94vw] mx-auto px-[2vh] md:px-[2vw] pb-[4vh] md:pb-[4vh] ${showMobileForm ? "block" : "hidden"
+          } md:block`}
       >
         <form
           onSubmit={handleSubmit}
           className="grid grid-cols-2 md:grid-cols-8 gap-px overflow-hidden bg-[#fbf7f0]/5 backdrop-blur-md border border[#f3e9cb]/10 rounded-[2vh] md:rounded-[1vw] shadow-[0_4px_30px_rgba(0,0,0,0.4)] text-[#f3e9cb] font-medium text-[1.6vh] md:text-[1vw]"
         >
           {[{ label: "Name", name: "name", type: "text", placeholder: "Your Name" },
-            { label: "Phone", name: "phone", type: "tel", placeholder: "Phone Number" }].map(({ label, name, type, placeholder }) => (
+          { label: "Phone", name: "phone", type: "tel", placeholder: "Phone Number" }].map(({ label, name, type, placeholder }) => (
             <div key={name} className="bg-black/60 px-[2vh] py-[2vh] md:px-[2vw] md:py-[1vw] flex flex-col gap-[1vh] md:gap-[1vw]">
               <label className="text-[#f3e9cb]/80 text-[1.4vh] md:text-[1vw]">{label}</label>
               <input
@@ -149,8 +148,8 @@ const HeroSection = ({
 
           {/* Dropdowns */}
           {[{ label: "Rooms", name: "rooms", options: [1, 2, 3, 4] },
-            { label: "Adults", name: "adults", options: [1, 2, 3, 4] },
-            { label: "Children", name: "children", options: [0, 1, 2, 3] }].map(({ label, name, options }) => (
+          { label: "Adults", name: "adults", options: [1, 2, 3, 4] },
+          { label: "Children", name: "children", options: [0, 1, 2, 3] }].map(({ label, name, options }) => (
             <div key={name} className="bg-black/60 px-[2vh] py-[2vh] md:px-[2vw] md:py-[1vw] flex flex-col gap-[1vh] md:gap-[1vw]">
               <label className="text-[#f3e9cb]/80 text-[1.4vh] md:text-[1vw]">{label}</label>
               <select

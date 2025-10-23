@@ -15,11 +15,8 @@ const StorySection = () => (
 
 
       {/* === Section Header === */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-center mb-20"
+      <div
+
       >
         <p className="text-3xl pb-10 text-[#a17633] text-center font-playfair italic">आयुष्यम् अनुभवः समर्पितः <br /> <span className="mt-6 "> Dedicated to the experience of WELLNESS  </span></p>
         <div className="inline-flex items-center gap-3 mb-4 px-6 py-2 bg-[#fbf7f0]/80 backdrop-blur-sm rounded-full border border-[#E8D5B5]">
@@ -29,16 +26,13 @@ const StorySection = () => (
         <h2 className="text-4xl md:text-6xl font-playfair italic font-bold text-yellow-700/90">
           Our <span className="">Story</span>
         </h2>
-      </motion.div>
+      </div>
 
       {/* === Main Content Grid === */}
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-5 mt-8 gap-10">
         {/* === Left Column (Text) === */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="lg:col-span-2"
+        <div
+          className="md:col-span-2 "
         >
           <div className="bg-[#fbf7f0]/80 backdrop-blur-md border border-[#E8D5B5] p-8 rounded-xl shadow-lg h-full">
             <h3 className="text-xl font-semibold text-[#333333] font-playfair italic mb-6 flex items-center gap-2">
@@ -62,13 +56,10 @@ const StorySection = () => (
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* === Right Column (Image) === */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 }}
+        <div
           className="lg:col-span-3 relative group"
         >
           <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden shadow-2xl border-4 border[#f3e9cb]">
@@ -84,7 +75,7 @@ const StorySection = () => (
               <span className="text-sm font-medium text-gray-800">Shivalik foot hills</span>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
     </div>

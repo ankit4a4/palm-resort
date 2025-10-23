@@ -213,10 +213,8 @@ const ContactForm = () => {
     <section className="py-20 bg-[#fbf7f0]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
+            
           >
             <Card className="bg-[#fbf7f0] border-gray-200 shadow-lg">
               <CardContent className="p-8">
@@ -327,13 +325,11 @@ const ContactForm = () => {
                 </form>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
 
           {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
+           
             className="space-y-8"
           >
             <div>
@@ -347,11 +343,9 @@ const ContactForm = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {contactInfo.map((info, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                
                 >
                   <Card className="h-full bg-gray-50 border-gray-200">
                     <CardContent className="p-6">
@@ -372,10 +366,10 @@ const ContactForm = () => {
                       </div>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

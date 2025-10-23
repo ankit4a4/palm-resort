@@ -34,7 +34,7 @@ const rooms = [
     title: "Mud Houses",
     description:
       "Experience rustic charm in our traditional mud house, featuring a separate living area and ample space.",
-    price: "₹6,999",
+    price: "₹5,500",
     capacity: "2 Adults",
     amenities: ["Living Room", "Garden View", "Dining Area"],
     images: [mud2, mud1, mud3, mud4, mud5, mud6, mud7],
@@ -45,7 +45,7 @@ const rooms = [
     title: "Swiss Cottages",
     description:
       "Relax in our luxurious Swiss cottages, where you'll find a comfortable bed, exclusive experiences and all modern amenities.",
-    price: "₹5,999",
+    price: "₹5,500",
     capacity: "2 Adults",
     amenities: ["Yoga Mat", "Meditation Corner", "Tv", "Sound System"],
     images: [swiss1, swiss2],
@@ -56,7 +56,7 @@ const rooms = [
     title: "Family Suite",
     description:
       "Perfect for families with connecting rooms and child-friendly amenities.",
-    price: "₹7,999",
+    price: "₹5,500",
     capacity: "2 Adults + 2 Children",
     amenities: [
       "Connecting Rooms",
@@ -72,9 +72,9 @@ const rooms = [
     title: "Luxury Room",
     description:
       "Finest comfort with breathtaking mountain views, modern interiors and exquisite service.",
-    price: "₹8,999",
+    price: "₹5,500",
     capacity: "2 Adults",
-    amenities: ["Mountain View", "Balcony", "King Bed", "Sitting Area"],
+    amenities: ["Mountain View", "King Bed", "Sitting Area"],
     images: [luxury1, luxury2, luxury3, luxury4],
     features: [Wifi, Car, Coffee, Tv, Wind, Users],
   },
@@ -88,12 +88,9 @@ const RoomsGrid = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {rooms.map((room, index) => (
-            <motion.div
+            <div
               key={room.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
+           
               className="group"
             >
               <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-2xl rounded-xl overflow-hidden transition-all duration-300 flex flex-col">
@@ -152,7 +149,7 @@ const RoomsGrid = () => {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

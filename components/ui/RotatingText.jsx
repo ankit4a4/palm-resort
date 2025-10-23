@@ -160,15 +160,15 @@ const RotatingText = forwardRef((props, ref) => {
   }, [next, rotationInterval, auto]);
 
   return (
-    <motion.span
+    <span
       className={cn("text-rotate", mainClassName)}
       {...rest}
       layout
       transition={transition}
     >
       <span className="text-rotate-sr-only">{texts[currentTextIndex]}</span>
-      <AnimatePresence mode={animatePresenceMode} initial={animatePresenceInitial}>
-        <motion.div
+      <AnimatePresence mode={animatePresenceMode}>
+        <div
           key={currentTextIndex}
           className={cn(
             splitBy === "lines" ? "text-rotate-lines" : "text-rotate"
@@ -186,25 +186,13 @@ const RotatingText = forwardRef((props, ref) => {
                 className={cn("text-rotate-word", splitLevelClassName)}
               >
                 {wordObj.characters.map((char, charIndex) => (
-                  <motion.span
+                  <span
                     key={charIndex}
-                    initial={initial}
-                    animate={animate}
-                    exit={exit}
-                    transition={{
-                      ...transition,
-                      delay: getStaggerDelay(
-                        previousCharsCount + charIndex,
-                        array.reduce(
-                          (sum, word) => sum + word.characters.length,
-                          0
-                        )
-                      ),
-                    }}
+               
                     className={cn("text-rotate-element", elementLevelClassName)}
                   >
                     {char}
-                  </motion.span>
+                  </span>
                 ))}
                 {wordObj.needsSpace && (
                   <span className="text-rotate-space"> </span>
@@ -212,9 +200,9 @@ const RotatingText = forwardRef((props, ref) => {
               </span>
             );
           })}
-        </motion.div>
+        </div>
       </AnimatePresence>
-    </motion.span>
+    </span>
   );
 });
 

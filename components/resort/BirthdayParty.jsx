@@ -103,26 +103,20 @@ const BirthdayParty = () => {
             <section className="py-20 px-6 bg-gradient-to-b from-amber-50 via-yellow-50 to-orange-100">
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
+                    <div
+                     
                         className="text-center mb-14"
                     >
                         <h2 className="text-4xl md:text-5xl pb-4 font-serif font-extrabold text-[#A17633] italic font-playfai">
                             Memories & Photography
                         </h2>
                         <div className="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full shadow-md"></div>
-                    </motion.div>
+                    </div>
 
                     <div className="flex flex-col lg:flex-row gap-10 items-start">
                         {/* Left Big Image */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -60 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.7 }}
-                            viewport={{ once: true }}
+                        <div
+                       
                             className="lg:w-2/3"
                         >
                             <Image
@@ -133,14 +127,11 @@ loading="lazy"
                                 height={600}
                                 className="rounded-2xl shadow-xl object-cover w-full h-full"
                             />
-                        </motion.div>
+                        </div>
 
                         {/* Right Collage */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 60 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.7 }}
-                            viewport={{ once: true }}
+                        <div
+                         
                             className="lg:w-1/3 grid grid-cols-2 gap-4"
                         >
                             {birthdayPhotos.map((photo) => (
@@ -163,7 +154,7 @@ loading="lazy"
                                     </div>
                                 </div>
                             ))}
-                        </motion.div>
+                        </div>
                     </div>
 
                     {/* Text Content */}

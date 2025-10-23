@@ -49,7 +49,7 @@ export default function ValuePropsSection() {
   }, []);
 
   return (
-    <section className="py-20 px-4 sm:px-6 bg-[#fbf7f0]">
+    <section className="py-20 px-4 sm:px-6 bg-[#fdfaf6]">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-alegreya  italic  font-semibold text-yellow-700">

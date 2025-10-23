@@ -169,9 +169,7 @@ const BookingForm = () => {
             </div>
           </div>
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <div
             className="flex justify-center"
           >
             <Button
@@ -181,7 +179,7 @@ const BookingForm = () => {
             >
               Reserve Now
             </Button>
-          </motion.div>
+          </div>
         </form>
       </CardContent>
     </Card>

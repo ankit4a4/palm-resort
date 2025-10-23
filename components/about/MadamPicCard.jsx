@@ -39,7 +39,7 @@ export default function MadamProfile() {
     <section className="w-full py-16 px-6 md:px-16 bg-[#f3e9cb]">
       <div className="max-w-7xl shadow-lg rounded-lg p-5 border-1 border-gray-800 mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Left Side: Image */}
-        <div className="relative w-full md:w-1/3 h-80 md:h-[400px] rounded-lg overflow-hidden shadow-lg">
+        <div className="relative w-full md:w-1/3 h-80 md:h-[300px] rounded-lg overflow-hidden shadow-lg">
           <Image
             src={img1.src}
             alt="Dr. Urmilla N. Pandey"
@@ -62,7 +62,7 @@ export default function MadamProfile() {
             onClick={() => setIsOpen(true)}
             className="bg-[#AA7021] text-[#f3e9cb] font-semibold px-6 py-3 rounded-full hover:bg-[#8c5d18] transition shadow-md"
           >
-            View  Dr. Urmilla N. Pandey Pics
+            View  Dr. Urmilla N. Pandey 
           </button>
         </div>
       </div>

@@ -33,10 +33,8 @@ const ViewsSection = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+        <div
+     
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-black mb-4">
@@ -45,14 +43,12 @@ const ViewsSection = () => {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Discover the natural beauty that surrounds our resort, from mountain peaks to lush valleys
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
+       
             className="lg:col-span-2"
           >
             <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
@@ -73,20 +69,17 @@ src={images[selectedImage].src}
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Thumbnail Gallery */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
+        
             className="space-y-4"
           >
             {images.map((image, index) => (
-              <motion.div
+              <div
                 key={index}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+               
                 className={`relative h-24 rounded-lg overflow-hidden cursor-pointer transition-all duration-300 ${
                   selectedImage === index 
                     ? 'ring-4 ring-royal-gold shadow-lg' 
@@ -107,16 +100,14 @@ loading="lazy"
                     {image.title}
                   </span>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
 
         {/* Description */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+        <div
+       
           className="mt-16 text-center max-w-4xl mx-auto"
         >
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -126,7 +117,7 @@ loading="lazy"
             the surrounding landscape, making every moment a photo opportunity and every meal a 
             visual feast.
           </p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

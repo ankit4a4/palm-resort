@@ -24,10 +24,8 @@ const Directions = () => {
     <>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
+          
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-alegreya  italic font-bold text-yellow-700/90 mb-4">
@@ -38,15 +36,13 @@ const Directions = () => {
               Find your way to The Palm Bliss Resort in Uttarakhand with our
               detailed directions
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {directions.map((direction, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+              
               >
                 <Card className="h-full bg-[#fbf7f0] border-gray-200 hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-8">
@@ -68,15 +64,13 @@ const Directions = () => {
                     </p>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* Map */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
+        
             className="h-96 rounded-2xl overflow-hidden shadow-lg"
           >
             <iframe
@@ -89,7 +83,7 @@ const Directions = () => {
               referrerPolicy="no-referrer-when-downgrade"
               title="The Palm Bliss Resort Location"
             ></iframe>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

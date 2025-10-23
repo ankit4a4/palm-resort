@@ -17,43 +17,36 @@ const PhotographySection = () => {
     <section className="py-20 px-6 bg-gradient-to-b from-amber-50 via-yellow-50 to-orange-100">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+        <div
+
           className="text-center mb-14"
         >
           <h2 className="text-4xl md:text-5xl pb-4 font-serif font-extrabold text-[#A17633] italic font-playfai">
             Memories & Photography
           </h2>
           <div className="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full shadow-md"></div>
-        </motion.div>
+        </div>
 
         <div className="flex flex-col lg:flex-row gap-14 items-start">
           {/* Left: Image Grid */}
-          <motion.div
-            initial={{ opacity: 0, y: -60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
+          <div
+
             className="lg:w-1/2"
           >
             {/* Mobile: 2 cols, Desktop: 3 cols */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
               {photos.map((photo) => (
-                <motion.div
+                <div
                   key={photo.id}
-                  whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 200, damping: 15 }}
                   className="rounded-xl overflow-hidden shadow-lg group relative"
                 >
                   <Image
-loading="lazy" 
-    src={photo.src}
+                    loading="lazy"
+                    src={photo.src}
                     alt={photo.alt}
-                    width={500}       // Fixed width
-                    height={500}      // Fixed height
+                    width={500}      
+                    height={500}     
                     className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-end justify-center p-3">
@@ -61,17 +54,14 @@ loading="lazy"
                       {photo.alt}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Right: Text Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
+          <div
+
             className="lg:w-1/2 text-center lg:text-left"
           >
             <h3 className="text-3xl md:text-4xl italic font-playfai font-bold text-[#A17633] mb-6 leading-snug">
@@ -94,17 +84,16 @@ loading="lazy"
                 "Natural Golden Lighting",
                 "High Resolution Images",
               ].map((item, i) => (
-                <motion.div
+                <div
                   key={i}
-                  whileHover={{ y: -4 }}
                   className="bg-amber-100 rounded-full py-2 px-5 text-amber-800 flex items-center shadow-sm"
                 >
                   <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
                   {item}
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

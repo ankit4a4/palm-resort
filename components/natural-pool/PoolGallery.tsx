@@ -6,10 +6,8 @@ const PoolGallery = () => {
         <>
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                    <div
+                    
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-playfair font-bold text-black mb-4">
@@ -18,7 +16,7 @@ const PoolGallery = () => {
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Experience the beauty of our natural pool through different times of day
                         </p>
-                    </motion.div>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
@@ -47,12 +45,9 @@ const PoolGallery = () => {
                                 title: 'Mountain Reflection'
                             }
                         ].map((image, index) => (
-                            <motion.div
+                            <div
                                 key={index}
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                whileHover={{ scale: 1.05 }}
+                          
                                 className="relative h-64 rounded-2xl overflow-hidden cursor-pointer group"
                             >
                                 <Image
@@ -68,7 +63,7 @@ loading="lazy"
                                         {image.title}
                                     </h3>
                                 </div>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>

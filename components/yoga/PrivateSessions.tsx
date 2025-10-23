@@ -6,10 +6,8 @@ const PrivateSessions = () => {
     return (
         <section className="py-20 bg-black text-[#f3e9cb]">
             <div className="container mx-auto px-4">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                <div
+
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-4">
@@ -18,13 +16,11 @@ const PrivateSessions = () => {
                     <p className="text-lg text-gray-300 max-w-2xl mx-auto">
                         Personalized yoga instruction tailored to your individual needs and goals
                     </p>
-                </motion.div>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                    <div
+
                     >
                         <h3 className="text-3xl font-playfair font-bold mb-6">
                             Personalized Yoga Experience
@@ -61,22 +57,20 @@ const PrivateSessions = () => {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                    <div
+
                         className="relative h-96 rounded-2xl overflow-hidden"
                     >
                         <Image
-loading="lazy" 
-            src="https://images.pexels.com/photos/3822695/pexels-photo-3822695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            loading="lazy"
+                            src="https://images.pexels.com/photos/3822695/pexels-photo-3822695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             fill
                             alt="Private Yoga Session"
                             className="object-cover"
                         />
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

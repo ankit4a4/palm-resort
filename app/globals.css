@@ -221,27 +221,6 @@ p {
   margin-top: 20px;
 }
 
-/* Apply to common button selectors */
-button,
-input[type="button"],
-input[type="submit"],
-a.button,
-.btn {
-  animation: blink 1.2s linear infinite;
-}
-
-/* Keyframes: blink by toggling opacity */
-@keyframes blink {
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-  25%,
-  75% {
-    opacity: 0.3;
-  }
-}
 
 
 /* Sabhi button type elements pe apply kare */
