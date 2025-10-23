@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { AnimatePresence } from "framer-motion";
 import img1 from "../../public/Images/gallery/newg1.jpeg";
@@ -68,7 +67,6 @@ export default function GallerySection() {
         <h2 className="text-4xl font-bold font-alegreya italic text-center mb-16 text-yellow-700/90">
           Our Gallery
         </h2>
-
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
           <AnimatePresence>
             {galleryImages.map((src, i) => (
