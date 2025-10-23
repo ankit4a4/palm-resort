@@ -69,7 +69,7 @@ export default function WellnessPackagesSection() {
                     data-aos-anchor-placement="top-bottom"
                 >
 
-                    <h2 className="text-4xl font-alegreya  italic md:text-5xl font-playfair font-semibold text-yellow-700/90 mb-4">
+                    <h2 className="text-4xl   italic md:text-5xl font-playfair font-semibold text-yellow-700/90 mb-4">
                         Wellness Packages
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -87,12 +87,9 @@ export default function WellnessPackagesSection() {
                             data-aos-anchor-placement="top-bottom"
                             className="group relative bg-[#fbf7f0] rounded-xl shadow-lg overflow-hidden border border-[#e0d5c5] hover:shadow-2xl transition-all duration-500 hover:-translate-y-3"
                         >
-                            {/* Glow effect */}
                             <div className="absolute inset-0 bg-gradient-to-br from-[#A67A35]/10 to-[#D4AF37]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
 
-                            {/* Card */}
                             <div className="relative h-full flex flex-col">
-                                {/* Image container with parallax effect */}
                                 <div className="relative h-64 w-full overflow-hidden">
                                     <div className="absolute inset-0 bg-[#8B5A2B] mix-blend-multiply opacity-0 group-hover:opacity-20 transition-opacity duration-500 z-10" />
                                     <Image
@@ -122,8 +119,6 @@ export default function WellnessPackagesSection() {
                                         </h3>
                                     </div>
                                 </div>
-
-                                {/* Content with sliding up effect */}
                                 <div className="p-6 flex-grow flex flex-col transform group-hover:-translate-y-2 transition-transform duration-500">
                                     <p className="text-gray-700 mb-5 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
                                         {desc}
@@ -132,13 +127,7 @@ export default function WellnessPackagesSection() {
                                         <span className="text-lg font-bold text-[#8B5A2B] group-hover:text-[#A67A35] transition-colors duration-300">
                                             {price}
                                         </span>
-                                        {/* <button
 
-                                            className="px-4 py-2 bg-[#A67A35] hover:bg-[#8B5A2B] text-[#f3e9cb] text-sm font-medium rounded-lg 
-                                            transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-[#A67A35]/30">
-                                            Book Now
-                                            <span className="ml-2 inline-block group-hover:translate-x-1 transition-transform duration-300">→</span>
-                                        </button> */}
 
                                         <button
                                             onClick={() => setId(id)}
