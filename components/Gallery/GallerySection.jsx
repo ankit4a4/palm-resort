@@ -17,31 +17,19 @@ import img13 from "../../public/Images/AllPhotos/pool.webp";
 import img14 from "../../public/Images/AllPhotos/swiss.webp";
 import img15 from "../../public/Images/ayush-dining/1.jpg";
 import img16 from "../../public/Images/ayush-dining/2.jpg";
-import img17 from "../../public/Images/ayush-dining/3.jpg";
 import img18 from "../../public/Images/ayush-dining/4.jpg";
 import img19 from "../../public/Images/ayush-dining/11.png";
 import img20 from "../../public/Images/familyRoom/1.webp";
-import img21 from "../../public/Images/familyRoom/2.webp";
-import img22 from "../../public/Images/familyRoom/3.webp";
 import img23 from "../../public/Images/familyRoom/4.webp";
-import img24 from "../../public/Images/familyRoom/5.webp";
-import img25 from "../../public/Images/gallery/1.webp";
 import img26 from "../../public/Images/gallery/2.webp";
 import img27 from "../../public/Images/gallery/3.webp";
 import img28 from "../../public/Images/gallery/4.webp";
-import img29 from "../../public/Images/gallery/5.webp";
-import img30 from "../../public/Images/gallery/6.webp";
 import img31 from "../../public/Images/gallery/7.webp";
-import img32 from "../../public/Images/gallery/8.webp";
-import img33 from "../../public/Images/gallery/9.webp";
 import img34 from "../../public/Images/gallery/10.webp";
 import img35 from "../../public/Images/gallery/11.webp";
 import img36 from "../../public/Images/gallery/12.webp";
-import img37 from "../../public/Images/gallery/13.webp";
 import img38 from "../../public/Images/gallery/14.webp";
 import img39 from "../../public/Images/gallery/15.webp";
-import img40 from "../../public/Images/gallery/16.webp";
-import img41 from "../../public/Images/gallery/17.webp";
 import img42 from "../../public/Images/gallery/18.webp";
 import img43 from "../../public/Images/gallery/19.jpg";
 import img44 from "../../public/Images/gallery/20.jpg";
@@ -49,14 +37,13 @@ import img45 from "../../public/Images/gallery/21.jpg";
 import img46 from "../../public/Images/gallery/22.jpg";
 import img47 from "../../public/Images/gallery/23.jpg";
 import img48 from "../../public/Images/gallery/24.jpg";
-import img49 from "../../public/Images/gallery/25.jpg";
-import img50 from "../../public/Images/gallery/26.jpg";
+
 
 const galleryImages = [
   img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-  img11, img12, img13, img14, img15, img16,  img18, img19, img20,
-    img23,   img26, img27, img28, 
-  img31,   img34, img35, img36,  img38, img39,  img42, img43, img44, img45, img46, img47, img48, 
+  img11, img12, img13, img14, img15, img16, img18, img19, img20,
+  img23, img26, img27, img28, img31, img34, img35, img36, img38,
+  img39, img42, img43, img44, img45, img46, img47, img48,
 ];
 
 export default function GallerySection() {
