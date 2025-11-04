@@ -319,9 +319,10 @@ In the calm silence of the Shivalik foothills, where prana (life force) pulses t
         </div>
 
         < div
-          className="text-center mt-[8vh]"
+          className="text-center mt-[8vh]  "
         >
           <button
+            className="border border-[#eae0c3] text-[#eae0c3] hover:bg-[#eae0c3] hover:text-[#1a1a1a] px-10 py-3 rounded-lg"
             onClick={() => router.push("/wellness")}
           >
             Explore Wellness
