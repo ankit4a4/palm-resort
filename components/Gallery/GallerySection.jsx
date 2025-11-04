@@ -70,8 +70,6 @@ import img74 from "@/public/Images/mehndiImages/Mehndi5.jpg";
 import img75 from "@/public/Images/mehndiImages/Mehndi6.jpg";
 import img76 from "@/public/Images/mehndiImages/Mehndi7.jpg";
 
-
-// ✅ Random shuffled images (only valid ones)
 const galleryImages = [
   img1,img9,img52,img2,img31,img63,img3,img15,img71,img4,img10,img55,img5,
   img35,img62,img38,img6,img23,img56,img7,img14,img73,img8,img11,img66,img18,
